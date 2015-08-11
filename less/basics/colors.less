@@ -1,0 +1,40 @@
+/* --- Colours --- */
+@burgundy: #de2062;
+@burgundyDark: #b21e52;
+@blueDark: #414959;
+
+@white: #fff;
+@greyLight: #eee;
+@grey: #aab1bc;
+@black: #000;
+
+.bg-white {
+  background-color: @white;
+}
+.bg-greylight {
+  background-color: @greyLight;
+}
+.bg-grey {
+  background-color: @grey;
+}
+.bg-grey p {
+  color: @blueDark; 
+}
+.bg-winered {
+  background-color: @burgundy;
+  color: @white;
+}
+.bg-darkblue {
+  background-color: @blueDark;
+}
+.bg-darkblue p,
+.bg-darkblue h4,
+.bg-winered p {
+  color: @white;
+}
+.bg-gradient1 {
+  .gradient(transparent, fade(@blueDark, 0%), fade(@blueDark, 60%) );
+}
+.c-white {
+  color: @white;
+}

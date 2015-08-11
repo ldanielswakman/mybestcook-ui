@@ -1,0 +1,46 @@
+.btn {
+  display: inline-block;
+  padding: 5px 20px;
+  .rounded(20px);
+  border: 0;
+  font-family: 'Oswald', Arial Narrow, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: @grey;
+  color: @white;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(@grey, 10%);
+    color: @white;
+  }
+  &:active {
+    background-color: darken(@grey, 20%);
+  }
+
+  &.btn-large {
+    padding: 5px 30px;
+    .rounded(25px);
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  &.btn-primary {
+    background-color: @burgundy;
+    &:hover {
+      background-color: darken(@burgundy, 10%);
+      color: @white;
+    }
+    &:active {
+      background-color: darken(@burgundy, 20%);
+    }
+  }
+  &.btn-empty {
+    background-color: transparent;
+
+    &:hover {
+      background-color: fade(@black, 15%);
+    }
+  }
+}

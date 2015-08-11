@@ -1,0 +1,121 @@
+// @import url('vendors/bootstrap.less');
+// @import url('vendors/ionicons.less');
+@import url('lesselements.less');
+
+@import url('basics/colors.less');
+@import url('basics/utilities.less');
+@import url('basics/reset.less');
+
+@import url('components/button.less');
+@import url('components/form.less');
+
+@import url('elements/nav.less');
+
+
+body, html {
+	margin: 0;
+	padding: 0;
+
+	font-family: Merriweather;
+	/*letter-spacing: 0.01em;*/
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-kerning: normal;
+	font-size: 1.25em;
+	color: #414959;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+p {
+  font-family: Merriweather;
+	color: #79868e;
+}
+p + p {
+  margin-top: 0.75em;
+}
+a:hover, a:focus, a:active {
+	text-decoration: none;
+}
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+::selection {
+  background-color: #414959;
+  color: #fff;
+}
+
+
+
+
+/* --- Ionicons --- */
+.ion-15x {
+  font-size: 1.5em;
+}
+.ion-2x {
+  font-size: 2em;
+}
+.ion-3x {
+  font-size: 3em;
+}
+.ion-4x {
+  font-size: 4em;
+}
+.ion-fw {
+  width: 1.25em;
+}
+
+
+
+/* --- Layout --- */
+.row {
+  width: 100%;
+  max-width: 100%;
+	/*max-width: 1000px;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/* --- Slide --- */
+.slide {
+  position: relative;
+  min-height: 600px;
+  max-height: calc( 100vh - 50px );
+  background-size: cover;
+  background-position: center top;
+}
+
+
+
+/* --- Badge --- */
+.badge {
+  padding: 0;
+}
+.badge img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.badge-user {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+
+/* --- User --- */
+.firstname, .lastname {
+  display: inline-block;
+  padding-top: 5px;
+  text-transform: capitalize;
+}

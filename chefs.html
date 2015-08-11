@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <title>mybestcook</title>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="L Daniel Swakman, www.ldaniel.eu" />
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Amiri:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="icon" href="images/favicon.ico">
+    <!-- 'Use as mobile app' configurations -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#b21e52">
+    <meta name="msapplication-navbutton-color" content="#b21e52">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#b21e52">
+    <link rel="apple-touch-icon" href="images/app-icons/launcher-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/app-icons/launcher-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/app-icons/launcher-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/app-icons/launcher-icon-152x152.png">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+    // inserting random user info for mockup purposes
+    $.ajax({
+      url: 'http://api.randomuser.me/',
+      dataType: 'json',
+      success: function(data){
+        $user = data['results'][0]['user'];
+        console.log($user);
+        $('.firstname').html($user['name']['first']);
+        $('.lastname').html($user['name']['last']);
+      }
+    });
+    </script>
+
+  </head>
+
+  <body id="top">
+
+    <nav class="bg-white u-pv30 u-alignright u-ph20 u-nowrap">
+      <a href="about.html" class="btn btn-transp btn-lg u-floatright">
+        <i class="ion ion-navicon ion-15x"></i>
+      </a>
+      <ul class="menu">
+        <li>
+          <a href="index.html" class="btn btn-lg"><i class="ion ion-home"></i></a>
+        </li>
+        <li>
+          <a href="chefs.html" class="btn btn-lg">Browse chefs</a>
+        </li>
+        <li>
+          <a href="events.html" class="btn btn-lg">Events</a>
+        </li>
+        <li>
+          <a href="about.html" class="btn btn-primary btn-lg">Log in</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="bg-greylight">
+      <div class="row u-pv30">
+        <div class="col-sm-6 u-alignleft">
+          <span class="firstname">...</span> <span class="lastname">...</span>
+          <div class="badge badge-user u-floatright u-ml40 u-mr20">
+            <img src="images/user_fallback.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-grey">
+      <div class="row u-pv60">
+        <div class="col-sm-5 col-sm-offset-1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam id ipsum absurdum, maximum malum neglegi. Nisi autem rerum natura perspecta erit, nullo modo poterimus sensuum iudicia defendere. Si qua in iis corrigere voluit, deteriora fecit. Cur haec eadem Democritus? Sed vos squalidius, illorum vides quam niteat oratio.</p>
+
+          <p>Dolere malum est: in crucem qui agitur, beatus esse non potest. Duo Reges: constructio interrete. Claudii libidini, qui tum erat summo ne imperio, dederetur. Sic enim censent, oportunitatis esse beate vivere.</p>
+        </div>
+      </div>
+    </section>
+
+  </body>
+
+</html>

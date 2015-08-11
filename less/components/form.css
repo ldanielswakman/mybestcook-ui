@@ -1,0 +1,9 @@
+.field {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
