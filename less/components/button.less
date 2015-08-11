@@ -4,12 +4,15 @@
   .rounded(20px);
   border: 0;
   font-family: 'Oswald', Arial Narrow, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   background-color: @grey;
   color: @white;
   letter-spacing: 0.05em;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
   &:hover {
     background-color: darken(@grey, 10%);
@@ -17,6 +20,10 @@
   }
   &:active {
     background-color: darken(@grey, 20%);
+    outline: none;
+  }
+  &:focus {
+    outline: none;
   }
 
   &.btn-large {
@@ -41,6 +48,16 @@
 
     &:hover {
       background-color: fade(@black, 15%);
+    }
+  }
+  &.btn-outline {
+    background-color: transparent;
+    border: 1px solid @burgundy;
+    color: @burgundy;
+
+    &:hover {
+      background-color: @burgundy;
+      color: @white;
     }
   }
 }
