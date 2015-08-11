@@ -84,6 +84,14 @@ h3 {
 	margin-left: auto;
 	margin-right: auto;
 }
+.col-nopadding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.content {
+  .clearfix;
+  padding: 60px;
+}
 
 
 
@@ -101,20 +109,30 @@ h3 {
 /* --- Badge --- */
 .badge {
   padding: 0;
+  .rounded(10px);
+  overflow: hidden;
+  object-fit: cover;
 
   img {
-    max-width: 100%;
-    max-height: 100%;
+    object-fit: cover;
   }
-  &.badge-user {
+  &.badge-circle {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
+    .rounded(50%);
 
     &.badge-large {
       width: 60px;
       height: 60px;
+    }
+  }
+  &.badge-square {
+    width: 60px;
+    height: 60px;
+
+    &.badge-large {
+      width: 100px;
+      height: 100px;
     }
   }
 }
@@ -151,4 +169,13 @@ h3 {
   display: inline-block;
   padding-top: 5px;
   text-transform: capitalize;
+}
+
+
+
+/* --- Footer --- */
+footer {
+  padding: 60px;
+  background-color: #272c35;
+  text-align: center;
 }
