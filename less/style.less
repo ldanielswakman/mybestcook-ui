@@ -89,8 +89,10 @@ h3 {
   padding-right: 0;
 }
 .content {
+  position: relative;
   .clearfix;
   padding: 60px;
+  z-index: 1;
 }
 
 
@@ -102,6 +104,7 @@ h3 {
   height: 70vh;
   background-size: cover;
   background-position: center top;
+  z-index: 0;
 }
 
 
@@ -158,6 +161,19 @@ h3 {
 
 /* --- Rating --- */
 .rating {
+  color: @burgundyDark;
+}
+
+
+
+/* --- Quote --- */
+.quote:before {
+  content: '“';
+  display: block;
+  margin-left: -10px;
+  margin-top: 0.2em;
+  font-size: 5em;
+  line-height: 0.2em;
   color: @burgundyDark;
 }
 

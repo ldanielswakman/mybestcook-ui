@@ -20,20 +20,25 @@ function scrollActions() {
       if (!$touch) {
         prlx_offset = ($(this).attr('data-prlx-offset')) ? $(this).attr('data-prlx-offset') : 0;
         var pos = -(-prlx_offset - (scroll - st)/p)+'px';
-        console.log((scroll - st)/p);
         $(this).css('background-position','center '+pos);
         // $(this).css('transform','translate3d(0px, '+pos+', 0px)');
       } else if ($ios) {
         $(this).css('background-attachment','scroll');
       }
     });
-
-    if (scroll + $('nav').outerHeight() > ( $('.slide').outerHeight() + $('.slide').offset().top ) ) {
+    if (scroll + $('nav').outerHeight() < ( $('.slide').outerHeight() + $('.slide').offset().top ) ) {
       $('nav').removeClass('isWhite');
     } else {
       $('nav').addClass('isWhite');
     }
   }
+  // if(($('.content-left').length + $('.content-right').length) > 0) {
+  //   $('.content-left').each(function() {
+  //     var pos = (scroll - $(this).offset().top) + 'px';
+  //     console.log(pos);
+  //     $(this).css('transform','translate3d(0px, '+pos+', 0px)');
+  //   });
+  // }
 }
 
 $(window).scroll(function() { scrollActions(); });
