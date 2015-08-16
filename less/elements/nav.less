@@ -37,6 +37,9 @@ nav {
     .transition(0.3s);
   }
   &.isActive {
+    .nav-fav a, .nav-fav .btn {
+      color: @blueDark;
+    }
     .nav-panel {
       .transform(translateX(0));
       .box-shadow(-5px 0 fade(@blueDark, 10%));
@@ -50,7 +53,7 @@ nav {
     background-color: @white;
     border-bottom-color: @greyLight;
 
-    a, .btn {
+    .nav-fav a, .nav-fav .btn {
       color: @blueDark;
     }
   }

@@ -12,6 +12,9 @@ $(document).ready(function() {
     $(this).removeClass('field-hasError');
     $(this).closest('.fieldset').find('.field-validation').fadeOut();
   });
+  $('#navbutton').click(function() {
+    $('nav').toggleClass('isActive');
+  });
 });
 
 // parallax functionality
