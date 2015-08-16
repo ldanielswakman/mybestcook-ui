@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title>mybestcook</title>
+
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="L Daniel Swakman, www.ldaniel.eu" />
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<link href='https://fonts.googleapis.com/css?family=Amiri:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+	  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	  <link rel="icon" href="images/favicon.ico">
+	  <!-- 'Use as mobile app' configurations -->
+	  <link rel="manifest" href="manifest.json">
+	  <meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#b21e52">
+		<meta name="msapplication-navbutton-color" content="#b21e52">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#b21e52">
+		<link rel="apple-touch-icon" href="images/app-icons/launcher-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/app-icons/launcher-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/app-icons/launcher-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/app-icons/launcher-icon-152x152.png">
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/scripts.js"></script>
+
+	</head>
+
+	<body id="top">
+
+    <nav class="isWhite">
+
+    	<div class="nav-fav u-pv30 u-ph20 u-nowrap">
+
+	      <a href="javascript:void(0)" id="navbutton" class="btn btn-empty btn-lg u-floatright">
+	        <i class="ion ion-drag ion-15x ion-fw"></i>
+	        <i class="ion ion-android-close ion-15x ion-fw u-hide"></i>
+	      </a>
+	      <ul class="menu-fav u-clearfix">
+	        <li>
+	          <a href="list-chefs.html" class="btn btn-empty isCurrent">Browse chefs</a>
+	        </li>
+	        <li>
+	          <a href="list-events.html" class="btn btn-empty">Events</a>
+	        </li>
+	      </ul>
+
+      </div>
+
+      <a href="javascript:void(0)" class="nav-mask">
+      </a>
+
+      <div class="nav-panel">
+      	<ul class="menu-full">
+      		<li>
+      			<a href="javascript:void(0)">Browse chefs</a>
+      		</li>
+      		<li>
+      			<a href="javascript:void(0)">Browse events</a>
+      		</li>
+      		<li>
+      			<a href="javascript:void(0)">My profile</a>
+      		</li>
+      		<li>
+      			<a href="javascript:void(0)">Log out</a>
+      		</li>
+      	</ul>
+      </div>
+
+    </nav>
+
+		<section>
+
+			<div class="row bg-darkblue">
+				<div class="col-sm-6 col-nopadding">
+          <div class="content u-pv30 bg-winered u-aligncenter">
+            <a href="index.html">
+              <img id="logo" src="images/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="content u-ph10 u-pv30 bg-winereddark">
+            <div class="fieldset-hasIcon">
+              <select class="field field-natural">
+                <option selected="true">all</option>
+                <option>[top rated]</option>
+                <option>[most recent]</option>
+                <option>[...]</option>
+              </select>
+              <i class="ion ion-arrow-down-b u-mt5"></i>
+            </div>
+            <div class="fieldset-hasIcon">
+              <select class="field field-natural">
+                <option selected="true">Istanbul</option>
+                <option>London</option>
+              </select>
+              <i class="ion ion-arrow-down-b u-mt5"></i>
+            </div>
+            <div class="fieldset-hasIcon">
+              <select class="field field-natural">
+                <option selected="true">any</option>
+                <option>[cuisine]</option>
+                <option>[cuisine]</option>
+              </select>
+              <i class="ion ion-arrow-down-b u-mt5"></i>
+            </div>
+          </div>
+				</div>
+        <div class="col-sm-6 col-nopadding">
+          <div class="navplaceholder"></div>
+          <div class="content u-ph40">
+            <h4 class="c-grey u-mb20">DID YOU KNOW?</h4>
+            <p><em>The chef with the highest rating is</em> <span class="title">Erhan Kayhan</span></p>
+          </div>
+        </div>
+			</div>
+
+    </section>
+
+    <section>
+
+			<div class="row">
+        <div class="col-sm-6 col-nopadding">
+
+          <div class="content content-left u-pa30">
+            <!-- <h4 class="c-winered u-mb20">MOST POPULAR CHEFS</h4> -->
+
+            <div class="list u-mb20">
+              <a href="view-chef.html" class="list-item u-clearfix">
+                <div class="rating u-floatright u-mt20">
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star-half"></i>
+                  <i class="ion ion-android-star-outline"></i>
+                </div>
+                <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                  <img src="images/user_fallback.png" alt="" />
+                </div>
+                <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+                <p><small>Turkish, mediterranean, crossover</small></p>
+              </a>
+              <a href="view-chef.html" class="list-item u-clearfix">
+                <div class="rating u-floatright u-mt20">
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star-half"></i>
+                  <i class="ion ion-android-star-outline"></i>
+                </div>
+                <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                  <img src="images/user_fallback.png" alt="" />
+                </div>
+                <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+                <p><small>Turkish, mediterranean, crossover</small></p>
+              </a>
+              <a href="view-chef.html" class="list-item u-clearfix">
+                <div class="rating u-floatright u-mt20">
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star-half"></i>
+                  <i class="ion ion-android-star-outline"></i>
+                </div>
+                <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                  <img src="images/user_fallback.png" alt="" />
+                </div>
+                <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+                <p><small>Turkish, mediterranean, crossover</small></p>
+              </a>
+              <a href="view-chef.html" class="list-item u-clearfix">
+                <div class="rating u-floatright u-mt20">
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star-half"></i>
+                  <i class="ion ion-android-star-outline"></i>
+                </div>
+                <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                  <img src="images/user_fallback.png" alt="" />
+                </div>
+                <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+                <p><small>Turkish, mediterranean, crossover</small></p>
+              </a>
+              <a href="view-chef.html" class="list-item u-clearfix">
+                <div class="rating u-floatright u-mt20">
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star-half"></i>
+                  <i class="ion ion-android-star-outline"></i>
+                </div>
+                <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                  <img src="images/user_fallback.png" alt="" />
+                </div>
+                <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+                <p><small>Turkish, mediterranean, crossover</small></p>
+              </a>
+              <a href="view-chef.html" class="list-item u-clearfix">
+                <div class="rating u-floatright u-mt20">
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star"></i>
+                  <i class="ion ion-android-star-half"></i>
+                  <i class="ion ion-android-star-outline"></i>
+                </div>
+                <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                  <img src="images/user_fallback.png" alt="" />
+                </div>
+                <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+                <p><small>Turkish, mediterranean, crossover</small></p>
+              </a>
+            </div>
+
+            <div class="u-aligncenter">
+              <a href="list-chefs.html" class="btn btn-outline u-mb40">LOAD MORE</a>
+            </div>
+          </div>
+       
+          <div class="content content-right bg-winereddark">
+            <p class="c-white">Or are you a food fan and just want to stay in the loop?</p>
+            <form action="" class="newsletter u-mt10">
+              <div class="fieldset u-floatleft u-mt10">
+                <input type="email" class="field" placeholder="Add your email address to the"></input>
+                <div class="field-validation u-hide">Please fill in your email address.</div>
+              </div>
+              <a href="javascript:void(0)" class="btn btn-white u-floatleft u-mt10" onclick="submitDummyEffects($(this));">NEWSLETTER</a>
+              <div class="field-message u-mt20 u-hide">
+                <a href="javascript:void(0)" onclick="closeMessage($(this));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
+                Thanks! A confirmation email has been sent to your address.
+              </div>
+            </form>
+          </div>
+
+        </div>
+        <div class="col-sm-6 col-nopadding">
+
+          <div class="content content-right bg-greylight">
+
+            <h4 class="c-grey u-mb20">RECOMMENDED CHEFS</h4>
+
+            <a href="view-chef.html" class="list-item u-clearfix">
+              <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                <img src="images/user_fallback.png" alt="" />
+              </div>
+              <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+              <p><small>Turkish, mediterranean, crossover</small></p>
+            </a>
+            <a href="view-chef.html" class="list-item u-clearfix">
+              <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                <img src="images/user_fallback.png" alt="" />
+              </div>
+              <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+              <p><small>Turkish, mediterranean, crossover</small></p>
+            </a>
+            <a href="view-chef.html" class="list-item u-clearfix">
+              <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                <img src="images/user_fallback.png" alt="" />
+              </div>
+              <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+              <p><small>Turkish, mediterranean, crossover</small></p>
+            </a>
+            <a href="view-chef.html" class="list-item u-clearfix">
+              <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                <img src="images/user_fallback.png" alt="" />
+              </div>
+              <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+              <p><small>Turkish, mediterranean, crossover</small></p>
+            </a>
+            <a href="view-chef.html" class="list-item u-clearfix">
+              <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                <img src="images/user_fallback.png" alt="" />
+              </div>
+              <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+              <p><small>Turkish, mediterranean, crossover</small></p>
+            </a>
+            <a href="view-chef.html" class="list-item u-clearfix">
+              <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                <img src="images/user_fallback.png" alt="" />
+              </div>
+              <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+              <p><small>Turkish, mediterranean, crossover</small></p>
+            </a>
+
+          </div>
+
+          <div class="content content-right bg-greymedium">
+
+            <h4 class="c-grey u-mb20">CHEFS I'M FOLLOWING</h4>
+
+            <a href="view-chef.html" class="list-item u-clearfix">
+              <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                <img src="images/user_fallback.png" alt="" />
+              </div>
+              <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+              <p><small>Turkish, mediterranean, crossover</small></p>
+            </a>
+            <a href="view-chef.html" class="list-item u-clearfix">
+              <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                <img src="images/user_fallback.png" alt="" />
+              </div>
+              <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+              <p><small>Turkish, mediterranean, crossover</small></p>
+            </a>
+            <a href="view-chef.html" class="list-item u-clearfix">
+              <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                <img src="images/user_fallback.png" alt="" />
+              </div>
+              <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+              <p><small>Turkish, mediterranean, crossover</small></p>
+            </a>
+            <a href="view-chef.html" class="list-item u-clearfix">
+              <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                <img src="images/user_fallback.png" alt="" />
+              </div>
+              <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+              <p><small>Turkish, mediterranean, crossover</small></p>
+            </a>
+            <a href="view-chef.html" class="list-item u-clearfix">
+              <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                <img src="images/user_fallback.png" alt="" />
+              </div>
+              <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+              <p><small>Turkish, mediterranean, crossover</small></p>
+            </a>
+            <a href="view-chef.html" class="list-item u-clearfix">
+              <div class="badge badge-circle badge-large u-mr20 u-floatleft">
+                <img src="images/user_fallback.png" alt="" />
+              </div>
+              <h4 class="c-darkblue u-mt10">Erhan Kayhan</h4>
+              <p><small>Turkish, mediterranean, crossover</small></p>
+            </a>
+
+          </div>
+
+  			</div>
+      </div>
+
+		</section>
+
+    <footer>
+      <img src="images/logo.svg" width="200px" alt="" class="u-opacity50" />
+    </footer>
+
+	</body>
+
+</html>
