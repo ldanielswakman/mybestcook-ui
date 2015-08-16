@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title>mybestcook</title>
+
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="L Daniel Swakman, www.ldaniel.eu" />
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<link href='https://fonts.googleapis.com/css?family=Amiri:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+	  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	  <link rel="icon" href="images/favicon.ico">
+	  <!-- 'Use as mobile app' configurations -->
+	  <link rel="manifest" href="manifest.json">
+	  <meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#b21e52">
+		<meta name="msapplication-navbutton-color" content="#b21e52">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#b21e52">
+		<link rel="apple-touch-icon" href="images/app-icons/launcher-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/app-icons/launcher-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/app-icons/launcher-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/app-icons/launcher-icon-152x152.png">
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/scripts.js"></script>
+
+	</head>
+
+	<body id="top">
+
+    <nav class="isWhite">
+
+    	<div class="nav-fav u-nowrap">
+
+	      <a href="javascript:void(0)" id="navbutton" class="btn btn-empty btn-lg u-floatright">
+	        <i class="ion ion-drag ion-15x ion-fw"></i>
+	        <i class="ion ion-android-close ion-15x ion-fw u-hide"></i>
+	      </a>
+	      <ul class="menu-fav u-clearfix">
+          <li>
+            <a href="index.html" class="btn btn-empty u-ph10 u-opacity50"><i class="ion ion-android-home ion-15x"></i></a>
+          </li>
+	        <li>
+	          <a href="list-chefs.html" class="btn btn-empty">Browse chefs</a>
+	        </li>
+	        <li>
+	          <a href="list-events.html" class="btn btn-empty">Events</a>
+	        </li>
+	      </ul>
+
+      </div>
+
+      <a href="javascript:void(0)" class="nav-mask">
+      </a>
+
+      <div class="nav-panel">
+      	<ul class="menu-full">
+      		<li>
+      			<a href="list-chefs.html">
+              <i class="ion ion-person-stalker ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Browse chefs</div>
+            </a>
+      		</li>
+      		<li>
+      			<a href="list-events.html">
+              <i class="ion ion-android-calendar ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Browse events</div>
+              </a>
+      		</li>
+      		<li>
+      			<a href="view-chef.html">
+              <i class="ion ion-person ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">My profile</div>
+            </a>
+      		</li>
+      		<li>
+      			<a href="index.html">
+              <i class="ion ion-log-out ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Log out</div>
+            </a>
+      		</li>
+      	</ul>
+      </div>
+
+    </nav>
+
+		<section>
+
+			<div class="row bg-greylight">
+				<div class="col-sm-6 col-nopadding">
+          <div class="slide" style="background-image: url('images/profil.jpg'); height: 400px">
+          </div>
+          <div class="content">
+            <h4>RATING</h4>
+            <div class="rating u-mt20 u-ph10 u-inlineblock u-aligncenter">
+              <h1>3.9</h1>
+              <label class="u-mt10">flavor</label>
+            </div>
+            <div class="rating u-mt20 u-ph10 u-inlineblock u-aligncenter">
+              <h1>2.8</h1>
+              <label class="u-mt10">timing</label>
+            </div>
+            <div class="rating u-mt20 u-ph10 u-inlineblock u-aligncenter">
+              <h1>4.6</h1>
+              <label class="u-mt10">presentation</label>
+            </div>
+            <div class="rating u-mt20 u-ph10 u-inlineblock u-aligncenter">
+              <h1>4.2</h1>
+              <label class="u-mt10">communication</label>
+            </div>
+            <div class="rating u-mt20 u-ph10 u-inlineblock u-aligncenter">
+              <h1 class="c-darkblue"><strong>4.1</strong></h1>
+              <label class="u-mt10">overall</label>
+            </div>
+          </div>
+				</div>
+        <div class="col-sm-6 col-nopadding">
+          <div class="navplaceholder"></div>
+          <div class="content bg-white">
+            <h1 class="u-mb30">Erhan Kayhan</h1>
+            <div class="u-mb10">
+              <h4 class="c-grey u-floatleft" style="width: 180px;">member since</h4>
+              <p class="c-winered">January 2010</p>
+            </div>
+            <div class="u-mb20">
+              <h4 class="c-grey u-floatleft" style="width: 180px;">cuisine type</h4>
+              <p class="c-winered">Turkish, mediterranean, crossover</p>
+            </div>
+            <small>
+              <p>Cooking can be a pleasure for children of all ages. Start them young and with any luck they'll develop a lifelong love of the kitchen as well as skills they can use throughout adulthood.</p>
+
+              <p>Children will vary in their ability to undertake different cooking activities. Use your own judgment to choose tasks you think are suitable for your child. Safety is the biggest concern, beyond that a little trial and error is all part of the fun.</p>
+
+              <p>Below we've put together a list of suggested activities for under 3s, 3 - 5 year olds, 5 - 7 years olds, 8 - 11 year olds and children 12 and above.</p>
+            </small>
+          </div>
+        </div>
+			</div>
+
+    </section>
+
+    <section class="bg-grey">
+      <div class="row">
+        <div class="col-sm-6 col-nopadding">
+          <div class="content">
+            <h2 class="u-mb20">Domates çorbası</h2>
+            <small><p>But no one's perfect. The flu hits. You've had a rough week at work. You're starving and need to make dinner in five minutes. None of those situations permit a leisurely hour of simmering and blending, so you've got to do it. When things get dire, you've got to go to the pantry (which as food lovers we equate with "going to the mattresses"). Lucky for you, some canned (or boxed, now that we're in 2013) tomato soups are actually pretty delicious. Our job was to find them and tell you all about it.</p></small>
+          </div>
+        </div>
+        <div class="col-sm-6 col-nopadding">
+          <div class="slide" style="background-image: url('images/patlican.jpeg'); height: 400px"></div>
+        </div>
+      </div>
+		</section>
+
+    <section class="bg-greylight">
+      <div class="row">
+        <div class="col-sm-6 col-sm-push-6 col-nopadding">
+          <div class="content">
+            <h2 class="u-mb20">Domates çorbası</h2>
+            <small><p>But no one's perfect. The flu hits. You've had a rough week at work. You're starving and need to make dinner in five minutes. None of those situations permit a leisurely hour of simmering and blending, so you've got to do it. When things get dire, you've got to go to the pantry (which as food lovers we equate with "going to the mattresses"). Lucky for you, some canned (or boxed, now that we're in 2013) tomato soups are actually pretty delicious. Our job was to find them and tell you all about it.</p></small>
+          </div>
+        </div>
+        <div class="col-sm-6 col-sm-pull-6 col-nopadding">
+          <div class="slide" style="background-image: url('images/patlican.jpeg'); height: 400px"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-darkblue">
+      <div class="row">
+        <div class="col-sm-6 col-nopadding">
+          <div class="content">
+            <h2 class="u-mb20">Domates çorbası</h2>
+            <small><p>But no one's perfect. The flu hits. You've had a rough week at work. You're starving and need to make dinner in five minutes. None of those situations permit a leisurely hour of simmering and blending, so you've got to do it. When things get dire, you've got to go to the pantry (which as food lovers we equate with "going to the mattresses"). Lucky for you, some canned (or boxed, now that we're in 2013) tomato soups are actually pretty delicious. Our job was to find them and tell you all about it.</p></small>
+          </div>
+        </div>
+        <div class="col-sm-6 col-nopadding">
+          <div class="slide" style="background-image: url('images/patlican.jpeg'); height: 400px"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-winereddark">
+      <div class="content u-pa80">
+        <div class="u-floatright">
+          <a href="signup-chef.html" class="btn btn-large btn-white u-ml80">SIGN UP</a>
+        </div>
+        <p class="u-mt10">Want to create your own chef profile highlighting your special dishes and receive ratings and reviews?</p>
+      </div>
+    </section>
+
+    <footer>
+      <img src="images/logo.svg" width="200px" alt="" class="u-opacity50" />
+    </footer>
+
+	</body>
+
+</html>
