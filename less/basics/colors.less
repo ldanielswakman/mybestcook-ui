@@ -14,6 +14,9 @@
 .bg-greylight {
   background-color: @greyLight;
 }
+.bg-greymedium {
+  background-color: lighten(@grey, 20%);
+}
 .bg-grey {
   background-color: @grey;
 }
@@ -44,11 +47,17 @@
   color: @white !important;
 }
 .c-white-transp {
-  color: fade(@white, 50%);
+  color: fade(@white, 50%) !important;
+}
+.c-greylight {
+  color: @greyLight !important;
+}
+.c-grey {
+  color: @grey !important;
 }
 .c-winered {
-  color: @burgundy;
+  color: @burgundy !important;
 }
 .c-darkblue {
-  color: @blueDark;
+  color: @blueDark !important;
 }

@@ -34,7 +34,7 @@ function scrollActions() {
         $(this).css('background-attachment','scroll');
       }
     });
-    if (scroll + $('nav').outerHeight() < ( $('.slide').outerHeight() + $('.slide').offset().top ) ) {
+    if ($('section').first().hasClass('slide') && scroll + $('nav').outerHeight() < ( $('.slide').outerHeight() + $('.slide').offset().top ) ) {
       $('nav').removeClass('isWhite');
     } else {
       $('nav').addClass('isWhite');
