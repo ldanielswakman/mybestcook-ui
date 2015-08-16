@@ -3,11 +3,12 @@
 @import url('lesselements.less');
 
 @import url('basics/colors.less');
-@import url('basics/utilities.less');
+@import url('basics/mixins.less');
 @import url('basics/reset.less');
+@import url('basics/utilities.less');
 
 @import url('components/button.less');
-@import url('components/form.less');
+@import url('components/field.less');
 
 @import url('elements/nav.less');
 
@@ -42,8 +43,15 @@ p {
 p + p {
   margin-top: 0.75em;
 }
-a:hover, a:focus, a:active {
-	text-decoration: none;
+a {
+  color: @burgundy;
+
+  &:hover, 
+  &:focus, 
+  &:active {
+    text-decoration: none;
+    color: @burgundyDark;
+  }
 }
 h3 {
   text-transform: uppercase;

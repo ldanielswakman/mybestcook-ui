@@ -1,0 +1,13 @@
+/* --- Mixins --- */
+.animation(@properties) {
+  -webkit-animation: @properties;
+  -moz-animation: @properties;
+  -o-animation: @properties;
+  animation: @properties;
+}
+.transform-origin(@origin) {
+  -webkit-transform-origin: @origin;
+  -moz-transform-origin: @origin;
+  -ms-transform-origin: @origin; // IE9 only
+  transform-origin: @origin;
+}

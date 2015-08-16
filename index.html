@@ -159,7 +159,7 @@
             <form action="">
     					<h4><big>
                 I want to see
-                <div class="field-hasIcon">
+                <div class="fieldset-hasIcon">
                   <select class="field field-natural">
                     <option selected="true">all</option>
                     <option>[top rated]</option>
@@ -169,7 +169,7 @@
                   <i class="ion ion-arrow-down-b u-mt5"></i>
                 </div>
                 chefs in
-                <div class="field-hasIcon">
+                <div class="fieldset-hasIcon">
                   <select class="field field-natural">
                     <option selected="true">Istanbul</option>
                     <option>London</option>
@@ -177,7 +177,7 @@
                   <i class="ion ion-arrow-down-b u-mt5"></i>
                 </div>
                 cooking
-                <div class="field-hasIcon">
+                <div class="fieldset-hasIcon">
                   <select class="field field-natural">
                     <option selected="true">any</option>
                     <option>[cuisine]</option>
@@ -268,7 +268,17 @@
        
           <div class="content content-right">
             <p class="c-white">Or are you a food fan and just want to stay in the loop?</p>
-            <a href="signup-chef.html" class="btn btn-white u-mt20">SIGN UP</a>
+            <form action="" class="newsletter u-mt10">
+              <div class="fieldset u-floatleft u-mt10">
+                <input type="email" class="field" placeholder="Add your email address to the"></input>
+                <div class="field-validation u-hide">Please fill in your email address.</div>
+              </div>
+              <a href="javascript:void(0)" class="btn btn-white u-floatleft u-mt10" onclick="submitDummyEffects($(this));">NEWSLETTER</a>
+              <div class="field-message u-mt20 u-hide">
+                <a href="javascript:void(0)" onclick="closeMessage($(this));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
+                Thanks! A confirmation email has been sent to your address.
+              </div>
+            </form>
           </div>
 
         </div>
