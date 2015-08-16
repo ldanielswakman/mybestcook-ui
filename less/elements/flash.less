@@ -1,0 +1,22 @@
+/* --- Flash message(s) --- */
+.flash-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+
+  .message {
+    .clearfix;
+    padding: 10px 30px;
+    background-color: fade(@blueDark, 90%);
+
+    p {
+      margin-top: 5px;
+      color: @greyLight;
+    }
+  }
+  .message + .message {
+    border-top: 1px solid fade(@white, 25%);
+  }
+}

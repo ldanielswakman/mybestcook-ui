@@ -49,6 +49,9 @@
 	        <i class="ion ion-android-close ion-15x ion-fw u-hide"></i>
 	      </a>
 	      <ul class="menu-fav u-clearfix">
+          <li>
+            <a href="index.html" class="btn btn-empty u-ph10 u-opacity50"><i class="ion ion-android-home ion-15x"></i></a>
+          </li>
 	        <li>
 	          <a href="list-chefs.html" class="btn btn-empty isCurrent">Browse chefs</a>
 	        </li>
@@ -80,6 +83,22 @@
       </div>
 
     </nav>
+
+    <div class="flash-container">
+      <div class="message">
+        <div class="u-floatright">
+          <a href="view-chef.html" class="btn btn-primary">GO TO PROFILE</a>
+          <a href="javascript:void(0)" onclick="closeMessage($(this).closest('.message'));" class="btn btn-empty u-ph10"><i class="ion ion-android-close ion-15x"></i></a>
+        </div>
+        <p>Your profile has been updated.</p>
+      </div>
+      <div class="message">
+        <div class="u-floatright">
+          <a href="javascript:void(0)"  onclick="closeMessage($(this).closest('.message'));" class="btn btn-empty u-ph10"><i class="ion ion-android-close ion-15x"></i></a>
+        </div>
+        <p>Your account has been created! A confirmation email has been sent to your address.</p>
+      </div>
+    </div>
 
 		<section>
 
@@ -237,7 +256,7 @@
               </div>
               <a href="javascript:void(0)" class="btn btn-white u-floatleft u-mt10" onclick="submitDummyEffects($(this));">NEWSLETTER</a>
               <div class="field-message u-mt20 u-hide">
-                <a href="javascript:void(0)" onclick="closeMessage($(this));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
+                <a href="javascript:void(0)" onclick="closeMessage($(this).closest('.field-message'));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
                 Thanks! A confirmation email has been sent to your address.
               </div>
             </form>

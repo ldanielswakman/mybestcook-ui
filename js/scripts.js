@@ -48,9 +48,9 @@ function scrollActions() {
   //   });
   // }
 }
-// closes form field message
-function closeMessage(obj) {
-  obj.closest('.field-message').fadeOut();
+// closes any message
+function closeMessage(target) {
+  target.fadeOut();
 }
 // submit button effects (UI mockup only)
 function submitDummyEffects(obj) {
