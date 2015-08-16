@@ -1,5 +1,6 @@
 .field {
   display: inline-block;
+  max-width: 100%;
   height: 40px;
   padding: 10px 20px;
   .rounded(20px);
@@ -50,6 +51,9 @@
 select:hover {
   cursor: pointer;
 }
+.fieldset {
+  position: relative;
+}
 .fieldset-hasIcon {
   position: relative;
   display: inline-block;
@@ -74,7 +78,7 @@ select:hover {
 }
 .newsletter {
   .field {
-    min-width: 350px;
+    min-width: 280px;
     margin-right: -35px;
     padding-right: 42px;
   }
@@ -101,8 +105,8 @@ select:hover {
 .field-validation {
   display: block;
   padding: 5px 20px;
-  line-height: 2em;
-  font-size: 0.8em;
+  line-height: 1.5em;
+  font-size: 0.7em;
 
   &:before {
     border-width: 5px;

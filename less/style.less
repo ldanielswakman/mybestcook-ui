@@ -3,6 +3,7 @@
 @import url('lesselements.less');
 
 @import url('basics/colors.less');
+@import url('basics/generic.less');
 @import url('basics/mixins.less');
 @import url('basics/reset.less');
 @import url('basics/utilities.less');
@@ -25,7 +26,7 @@ body, html {
 	-moz-osx-font-smoothing: grayscale;
 	font-kerning: normal;
 	font-size: 1.1em;
-	color: #414959;
+	color: @blueDark;
 }
 * {
 	-webkit-box-sizing: border-box;
@@ -59,8 +60,11 @@ h3 {
   letter-spacing: 0.1em;
 }
 ::selection {
-  background-color: #414959;
-  color: #fff;
+  background-color: @blueDark;
+  color: @white;
+}
+#logo {
+  max-width: 100%;
 }
 
 
@@ -102,6 +106,11 @@ h3 {
   .clearfix;
   padding: 60px;
   z-index: 1;
+}
+@media screen and (max-width: @breakpoint-sm) {
+  .content {
+    padding: 30px;
+  }
 }
 
 
