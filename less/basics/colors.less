@@ -1,6 +1,6 @@
 /* --- Colours --- */
-@burgundy: #de2062;
-@burgundyDark: #b21e52;
+@burgundy: #dd2651;
+@burgundyDark: darken(#dd2651, 10%);
 @blueDark: #414959;
 
 @white: #fff;
@@ -15,7 +15,7 @@
   background-color: @greyLight;
 }
 .bg-greymedium {
-  background-color: lighten(@grey, 20%);
+  background-color: lighten(@grey, 15%);
 }
 .bg-grey {
   background-color: @grey;
@@ -44,6 +44,9 @@
 .bg-gradient1 {
   .gradient(transparent, fade(@blueDark, 0%), fade(@blueDark, 60%) );
 }
+.bg-gradient2 {
+  .gradient(transparent, fade(@blueDark, 60%), fade(@blueDark, 0%) );
+}
 .c-white {
   color: @white !important;
 }
@@ -52,6 +55,9 @@
 }
 .c-greylight {
   color: @greyLight !important;
+}
+.c-greymedium {
+  color: lighten(@grey, 15%);
 }
 .c-grey {
   color: @grey !important;

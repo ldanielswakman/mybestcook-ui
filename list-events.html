@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title>mybestcook</title>
+
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="L Daniel Swakman, www.ldaniel.eu" />
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<link href='https://fonts.googleapis.com/css?family=Amiri:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+	  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	  <link rel="icon" href="images/favicon.ico">
+	  <!-- 'Use as mobile app' configurations -->
+	  <link rel="manifest" href="manifest.json">
+	  <meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#b21e52">
+		<meta name="msapplication-navbutton-color" content="#b21e52">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#b21e52">
+		<link rel="apple-touch-icon" href="images/app-icons/launcher-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/app-icons/launcher-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/app-icons/launcher-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/app-icons/launcher-icon-152x152.png">
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/scripts.js"></script>
+
+	</head>
+
+	<body id="top">
+
+    <nav class="isWhite">
+
+    	<div class="nav-fav u-nowrap">
+
+	      <a href="javascript:void(0)" id="navbutton" class="btn btn-empty btn-lg u-floatright">
+	        <i class="ion ion-drag ion-15x ion-fw"></i>
+	        <i class="ion ion-android-close ion-15x ion-fw u-hide"></i>
+	      </a>
+	      <ul class="menu-fav u-clearfix">
+          <li>
+            <a href="index.html" class="btn btn-empty u-ph10 u-opacity50"><i class="ion ion-android-home ion-15x"></i></a>
+          </li>
+	        <li>
+	          <a href="list-chefs.html" class="btn btn-empty">Browse chefs</a>
+	        </li>
+	        <li>
+	          <a href="list-events.html" class="btn btn-empty isCurrent">Events</a>
+	        </li>
+	      </ul>
+
+      </div>
+
+      <a href="javascript:void(0)" class="nav-mask">
+      </a>
+
+      <div class="nav-panel">
+      	<ul class="menu-full">
+      		<li>
+      			<a href="list-chefs.html">
+              <i class="ion ion-person-stalker ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Browse chefs</div>
+            </a>
+      		</li>
+      		<li>
+      			<a href="list-events.html">
+              <i class="ion ion-android-calendar ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Browse events</div>
+              </a>
+      		</li>
+      		<li>
+      			<a href="view-chef.html">
+              <i class="ion ion-person ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">My profile</div>
+            </a>
+      		</li>
+      		<li>
+      			<a href="index.html">
+              <i class="ion ion-log-out ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Log out</div>
+            </a>
+      		</li>
+      	</ul>
+      </div>
+
+    </nav>
+
+    <div class="flash-container">
+    </div>
+
+		<section class="bg-greylight">
+
+			<div class="row">
+				<div class="col-sm-6 col-nopadding">
+          <div class="content u-pv30 bg-winered u-aligncenter">
+            <a href="index.html">
+              <img id="logo" src="images/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="content">
+            <h4 class="c-greymedium u-mb20">EVENTS</h4>
+            <p class="c-grey"><em>mybestcook</em> strives to bring together the best culinary minds with the people that enjoy food intensely.</p>
+          </div>
+				</div>
+        <div class="col-sm-6 col-nopadding">
+          <div class="navplaceholder"></div>
+          <div class="content u-ph40">
+            <h4 class="c-winered u-mb20">UPCOMING EVENT</h4>
+            <h1 class="u-mb10">Indian Night</h1>
+            <h4 class="u-mb20">Subtitle</h4>
+            <p class="u-mb20">
+              SALT Galata – 17 March 2015<br />
+              chef: Rahmi Denizaşan
+            </p>
+            <a href="view-event.html" class="btn btn-primary u-floatleft u-mr20">MORE INFO</a>
+            <a href="view-event.html" class="btn btn-white u-floatleft">RESERVE A SPOT</a>
+          </div>
+        </div>
+			</div>
+
+    </section>
+
+    <section class="content bg-darkblue">
+      <h4>PAST EVENTS</h4>
+    </section>
+
+    <!-- first past event start -->
+    <section class="slide" style="background-image: url('images/event.jpg');">
+
+			<div class="bg-gradient2 u-pinbottom u-fullwidth u-ph60 u-pv30">
+        <h1 class="c-white u-mb10">Event name</h1>
+        <h4 class="c-white">Event subtitle</h4>
+      </div>
+
+		</section>
+
+    <section class="bg-white">
+      <div class="row">
+        <div class="col-sm-4 content u-pv30">
+          <p>
+            17 March 2015<br />
+            SALT Galata, Beyoglu
+          </p>
+        </div>
+        <div class="col-sm-4 content u-pv30">
+          <p>
+            chef: Rahmi Denizaşan<br />
+            attendees: 18
+          </p>
+        </div>
+        <div class="col-sm-4 content u-pv30">
+          <a href="view-event.html" class="btn btn-outline u-floatright u-mt10">VIEW EVENT <i class="ion ion-chevron-right u-ml5"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- first past event end -->
+
+    <!-- second past event start -->
+    <section class="slide" style="background-image: url('images/yemek_organizasyonu.jpg');">
+
+      <div class="bg-gradient2 u-pinbottom u-fullwidth u-ph60 u-pv30">
+        <h1 class="c-white u-mb10">Event name</h1>
+        <h4 class="c-white">Event subtitle</h4>
+      </div>
+
+    </section>
+
+    <section class="bg-white">
+      <div class="row">
+        <div class="col-sm-4 content u-pv30">
+          <p>
+            17 March 2015<br />
+            SALT Galata, Beyoglu
+          </p>
+        </div>
+        <div class="col-sm-4 content u-pv30">
+          <p>
+            chef: Rahmi Denizaşan<br />
+            attendees: 18
+          </p>
+        </div>
+        <div class="col-sm-4 content u-pv30">
+          <a href="view-event.html" class="btn btn-outline u-floatright u-mt10">VIEW EVENT <i class="ion ion-chevron-right u-ml5"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- second past event end -->
+
+    <section class="bg-darkblue">
+      <div class="row">
+        <div class="col-sm-6 content bg-winered">
+          <p>Want to be part of the community or attend an event?</p>
+          <form action="" class="newsletter u-clearfix u-mt10 u-mb20">
+            <div class="fieldset u-floatleft u-mt10">
+              <input type="email" class="field" placeholder="type your email for the"></input>
+              <div class="field-validation u-hide">Please fill in your email address.</div>
+            </div>
+            <a href="javascript:void(0)" class="btn btn-white u-floatleft u-mt10" onclick="submitDummyEffects($(this));">NEWSLETTER</a>
+            <div class="field-message u-mt20 u-hide">
+              <a href="javascript:void(0)" onclick="closeMessage($(this));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
+              Thanks! A confirmation email has been sent to your address.
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-6 content">
+          <p>Or do you want to host a <em>mybestcook</em> event in your venue in the future?</p>
+          <a href="view-event.html" class="btn btn-large btn-white u-mt20">CONTACT US</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <img src="images/logo.svg" width="200px" alt="" class="u-opacity50" />
+    </footer>
+
+	</body>
+
+</html>

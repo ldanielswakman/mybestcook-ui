@@ -7,6 +7,8 @@ $(document).ready(function() {
   if ($touch) { $('body').addClass('isTouch') }
   var touchEvent = $touch ? 'touchstart' : 'click';
 
+  scrollActions();
+
   // listeners
   $('.field').on('keypress', function() {
     $(this).removeClass('field-hasError');
