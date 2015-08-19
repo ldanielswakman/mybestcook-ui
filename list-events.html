@@ -99,7 +99,7 @@
     <div class="flash-container">
     </div>
 
-    <div class="dialog-mask"></div>
+    <a href="javascript:closeMessage('dialog')" class="dialog-mask"></a>
 
     <dialog id="dialog_reserve" class="bg-greylight">
       <div class="row u-alignleft">
@@ -109,10 +109,10 @@
         </div>
         <div class="col-sm-6 content u-pv40 bg-white">
           <div class="u-clearfix u-mb10">
-            <a href="javascript:void(0)" onclick="closeMessage('dialog')" class="u-floatright u-pa10 c-grey"><i class="ion ion-android-close ion-15x"></i></a>
+            <a href="javascript:closeMessage('dialog')" class="u-floatright u-pa10 c-grey"><i class="ion ion-android-close ion-15x"></i></a>
           </div>
           <p class="u-mb20">it seems as if this message is here with a purpose; please fulfill this or that requirement to continue.</p>
-          <a href="javascript:void(0)" onclick="closeMessage('dialog')" class="btn btn-outlinegrey u-mr10">BACK</a>
+          <a href="javascript:closeMessage('dialog')" class="btn btn-outlinegrey u-mr10">BACK</a>
           <a href="javascript:void(0)" onclick="" class="btn btn-primary">CONTINUE</a>
         </div>
       </div>
@@ -143,7 +143,7 @@
               chef: Rahmi Denizaşan
             </p>
             <a href="view-event.html" class="btn btn-primary u-floatleft u-mr20">MORE INFO</a>
-            <a href="javascript:void(0)" class="btn btn-white u-floatleft" onclick="openDialog('reserve')">RESERVE A SPOT</a>
+            <a href="javascript:openDialog('reserve')" class="btn btn-white u-floatleft">RESERVE A SPOT</a>
           </div>
         </div>
 			</div>

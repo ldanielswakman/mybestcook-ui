@@ -20,8 +20,7 @@ $(document).ready(function() {
 
   $('body').bind('keyup', (function(e) {
     if(e.keyCode == 27) {
-      $('dialog').removeClass('isVisible');
-      $('.dialog-mask').removeClass('isVisible');
+      closeMessage('dialog');
     }
     e.preventDefault();
   }));
@@ -69,6 +68,7 @@ function closeMessage(target) {
   }
 }
 function openDialog(target) {
+  $('nav').removeClass('isActive');
   if($('#dialog_' + target).length > 0) {
     $('.dialog-mask').addClass('isVisible');
     $('#dialog_' + target).addClass('isVisible');

@@ -69,32 +69,58 @@
         <ul class="menu-full">
           <li>
             <a href="list-chefs.html">
-              <i class="ion ion-person-stalker ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <i class="ion ion-person-stalker ion-15x ion-fw u-floatleft u-mt5 u-mr20 u-aligncenter"></i>
               <div class="u-mt10">Browse chefs</div>
             </a>
           </li>
           <li>
             <a href="list-events.html">
-              <i class="ion ion-android-calendar ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <i class="ion ion-android-calendar ion-15x ion-fw u-floatleft u-mt5 u-mr20 u-aligncenter"></i>
               <div class="u-mt10">Browse events</div>
               </a>
           </li>
           <li>
-            <a href="view-chef.html">
-              <i class="ion ion-person ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
-              <div class="u-mt10">My profile</div>
-            </a>
-          </li>
-          <li>
-            <a href="index.html">
-              <i class="ion ion-log-out ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
-              <div class="u-mt10">Log out</div>
+            <a href="javascript:openDialog('login')">
+              <i class="ion ion-log-out ion-15x ion-fw u-floatleft u-mt5 u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Log in (chef)</div>
             </a>
           </li>
         </ul>
       </div>
 
     </nav>
+
+    <div class="flash-container">
+    </div>
+
+    <a href="javascript:closeMessage('dialog')" class="dialog-mask"></a>
+
+    <dialog id="dialog_login" class="bg-greylight">
+      <div class="row u-alignleft">
+        <div class="col-sm-6 content">
+          <h2 class="c-winered u-mb20">LOG IN</h2>
+          <h4 class="c-grey">IF YOU HAVE A MYBESTCOOK ACCOUNT AS A CHEF, YOU CAN LOG IN HERE.</h4>
+        </div>
+        <div class="col-sm-6 content u-pv40 bg-white">
+          <div class="u-clearfix u-mb10">
+            <a href="javascript:closeMessage('dialog')" class="u-floatright u-pa10 c-grey"><i class="ion ion-android-close ion-15x"></i></a>
+          </div>
+          <form action="">
+          <form action="" class="newsletter u-mb20">
+            <div class="fieldset u-floatleft">
+              <input type="email" class="field" placeholder="email address"></input>
+              <div class="field-validation u-hide">Please fill in your email address.</div>
+            </div>
+            <button type="submit" href="javascript:void(0)"class="btn btn-primary u-floatright" onclick="submitDummyEffects($(this));">LOGIN</button>
+            <div class="field-message u-mt20 u-hide">
+              <a href="javascript:void(0)" onclick="closeMessage($(this));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
+              Thanks! A confirmation email has been sent to your address.
+            </div>
+          </form>
+          </form>
+        </div>
+      </div>
+    </dialog>
 
 		<section class="slide" style="background-image: url('images/misafirlerimiz.jpg')">
 
