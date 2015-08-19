@@ -11,8 +11,9 @@
 @import url('components/button.less');
 @import url('components/field.less');
 
-@import url('elements/nav.less');
+@import url('elements/dialog.less');
 @import url('elements/flash.less');
+@import url('elements/nav.less');
 
 
 body, html {
@@ -36,6 +37,7 @@ body, html {
 h1, h2, h3, h4, h5, h6, .title {
   font-family: 'Oswald', Helvetica Neue, Helvetica, Arial, sans-serif;
   letter-spacing: 0.05em;
+  line-height: 1.4em;
 }
 p {
   font-family: Merriweather;
@@ -112,6 +114,13 @@ h3 {
     padding: 30px;
   }
 }
+.content-small {
+  position: relative;
+  .clearfix;
+  padding: 30px;
+  z-index: 1;
+}
+
 
 
 

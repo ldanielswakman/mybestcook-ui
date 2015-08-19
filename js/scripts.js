@@ -17,6 +17,15 @@ $(document).ready(function() {
   $('#navbutton').click(function() {
     $('nav').toggleClass('isActive');
   });
+
+  $('body').bind('keyup', (function(e) {
+    if(e.keyCode == 27) {
+      $('dialog').removeClass('isVisible');
+      $('.dialog-mask').removeClass('isVisible');
+    }
+    e.preventDefault();
+  }));
+
 });
 
 // parallax functionality
@@ -52,7 +61,20 @@ function scrollActions() {
 }
 // closes any message
 function closeMessage(target) {
-  target.fadeOut();
+  if (target == 'dialog') {
+    $('.dialog-mask').removeClass('isVisible');
+    $('dialog').removeClass('isVisible');
+  } else {
+    target.fadeOut();
+  }
+}
+function openDialog(target) {
+  if($('#dialog_' + target).length > 0) {
+    $('.dialog-mask').addClass('isVisible');
+    $('#dialog_' + target).addClass('isVisible');
+  } else {
+    console.log('dialog \'' + target + '\' not found.');
+  }
 }
 // submit button effects (UI mockup only)
 function submitDummyEffects(obj) {

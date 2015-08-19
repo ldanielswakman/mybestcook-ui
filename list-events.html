@@ -99,11 +99,30 @@
     <div class="flash-container">
     </div>
 
+    <div class="dialog-mask"></div>
+
+    <dialog id="dialog_reserve" class="bg-greylight">
+      <div class="row u-alignleft">
+        <div class="col-sm-6 content">
+          <h2 class="c-winered u-mb20">UH OH...</h2>
+          <h4 class="c-grey">YOU HAVE TO DO SOMETHING IN ORDER TO DO THIS.</h4>
+        </div>
+        <div class="col-sm-6 content u-pv40 bg-white">
+          <div class="u-clearfix u-mb10">
+            <a href="javascript:void(0)" onclick="closeMessage('dialog')" class="u-floatright u-pa10 c-grey"><i class="ion ion-android-close ion-15x"></i></a>
+          </div>
+          <p class="u-mb20">it seems as if this message is here with a purpose; please fulfill this or that requirement to continue.</p>
+          <a href="javascript:void(0)" onclick="closeMessage('dialog')" class="btn btn-outlinegrey u-mr10">BACK</a>
+          <a href="javascript:void(0)" onclick="" class="btn btn-primary">CONTINUE</a>
+        </div>
+      </div>
+    </dialog>
+
 		<section class="bg-greylight">
 
 			<div class="row">
 				<div class="col-sm-6 col-nopadding">
-          <div class="content u-pv30 bg-winered u-aligncenter">
+          <div class="content u-pv60 bg-winered u-aligncenter">
             <a href="index.html">
               <img id="logo" src="images/logo.svg" alt="" />
             </a>
@@ -124,7 +143,7 @@
               chef: Rahmi Denizaşan
             </p>
             <a href="view-event.html" class="btn btn-primary u-floatleft u-mr20">MORE INFO</a>
-            <a href="view-event.html" class="btn btn-white u-floatleft">RESERVE A SPOT</a>
+            <a href="javascript:void(0)" class="btn btn-white u-floatleft" onclick="openDialog('reserve')">RESERVE A SPOT</a>
           </div>
         </div>
 			</div>
@@ -147,19 +166,19 @@
 
     <section class="bg-white">
       <div class="row">
-        <div class="col-sm-4 content u-pv30">
+        <div class="col-sm-4 content-small">
           <p>
             17 March 2015<br />
             SALT Galata, Beyoglu
           </p>
         </div>
-        <div class="col-sm-4 content u-pv30">
+        <div class="col-sm-4 content-small">
           <p>
             chef: Rahmi Denizaşan<br />
             attendees: 18
           </p>
         </div>
-        <div class="col-sm-4 content u-pv30">
+        <div class="col-sm-4 content-small">
           <a href="view-event.html" class="btn btn-outline u-floatright u-mt10">VIEW EVENT <i class="ion ion-chevron-right u-ml5"></i></a>
         </div>
       </div>
@@ -178,19 +197,19 @@
 
     <section class="bg-white">
       <div class="row">
-        <div class="col-sm-4 content u-pv30">
+        <div class="col-sm-4 content content-small">
           <p>
             17 March 2015<br />
             SALT Galata, Beyoglu
           </p>
         </div>
-        <div class="col-sm-4 content u-pv30">
+        <div class="col-sm-4 content content-small">
           <p>
             chef: Rahmi Denizaşan<br />
             attendees: 18
           </p>
         </div>
-        <div class="col-sm-4 content u-pv30">
+        <div class="col-sm-4 content content-small">
           <a href="view-event.html" class="btn btn-outline u-floatright u-mt10">VIEW EVENT <i class="ion ion-chevron-right u-ml5"></i></a>
         </div>
       </div>
