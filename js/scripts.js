@@ -7,6 +7,15 @@ $(document).ready(function() {
   if ($touch) { $('body').addClass('isTouch') }
   var touchEvent = $touch ? 'touchstart' : 'click';
 
+  $('a[href^="#"]').smoothScroll();
+
+  if($('.slides').length > 0) {
+    $('.slides').slidesjs({
+      width: 500,
+      height: 300,
+    });
+  }
+
   scrollActions();
 
   // listeners

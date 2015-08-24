@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title>mybestcook</title>
+
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="L Daniel Swakman, www.ldaniel.eu" />
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<link href='http://fonts.googleapis.com/css?family=Amiri:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+	  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	  <link rel="icon" href="images/favicon.ico">
+	  <!-- 'Use as mobile app' configurations -->
+	  <link rel="manifest" href="manifest.json">
+	  <meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#b21e52">
+		<meta name="msapplication-navbutton-color" content="#b21e52">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#b21e52">
+		<link rel="apple-touch-icon" href="images/app-icons/launcher-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/app-icons/launcher-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/app-icons/launcher-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/app-icons/launcher-icon-152x152.png">
+
+		<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+		<script src="js/scripts.js"></script>
+
+	</head>
+
+	<body id="top">
+
+    <nav>
+
+      <div class="nav-fav u-nowrap">
+
+        <a href="javascript:void(0)" id="navbutton" class="btn btn-empty btn-lg u-floatright">
+          <i class="ion ion-drag ion-15x ion-fw"></i>
+          <i class="ion ion-android-close ion-15x ion-fw u-hide"></i>
+        </a>
+        <ul class="menu-fav u-clearfix">
+          <li>
+            <a href="index.html" class="btn btn-empty u-ph10 u-opacity50"><i class="ion ion-android-home ion-15x"></i></a>
+          </li>
+          <li>
+            <a href="list-chefs.html" class="btn btn-empty">Browse chefs</a>
+          </li>
+          <li>
+            <a href="list-events.html" class="btn btn-empty isCurrent">Events</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <a href="javascript:void(0)" class="nav-mask">
+      </a>
+
+      <div class="nav-panel">
+        <ul class="menu-full">
+          <li>
+            <a href="list-chefs.html">
+              <i class="ion ion-person-stalker ion-15x ion-fw u-floatleft u-mt5 u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Browse chefs</div>
+            </a>
+          </li>
+          <li>
+            <a href="list-events.html">
+              <i class="ion ion-android-calendar ion-15x ion-fw u-floatleft u-mt5 u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Browse events</div>
+              </a>
+          </li>
+          <li>
+            <a href="about.html">
+              <i class="ion ion-help ion-15x ion-fw u-floatleft u-mt5 u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">About <em>mybestcook</em></div>
+              </a>
+          </li>
+          <li>
+            <a href="signup-chef">
+              <i class="ion ion-person-add ion-15x ion-fw u-floatleft u-mt5 u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Sign up (chef)</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:openDialog('login')">
+              <i class="ion ion-log-out ion-15x ion-fw u-floatleft u-mt5 u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Log in (chef)</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <div class="flash-container">
+    </div>
+
+    <a href="javascript:closeMessage('dialog')" class="dialog-mask"></a>
+
+    <dialog id="dialog_reserve" class="bg-greylight">
+      <div class="row u-alignleft">
+        <div class="col-sm-6 content">
+          <h2 class="c-winered u-mb20">UH OH...</h2>
+          <h4 class="c-grey">YOU HAVE TO DO SOMETHING IN ORDER TO DO THIS.</h4>
+        </div>
+        <div class="col-sm-6 content u-pv40 bg-white">
+          <div class="u-clearfix u-mb10">
+            <a href="javascript:closeMessage('dialog')" class="u-floatright u-pa10 c-grey"><i class="ion ion-android-close ion-15x"></i></a>
+          </div>
+          <p class="u-mb20">it seems as if this message is here with a purpose; please fulfill this or that requirement to continue.</p>
+          <a href="javascript:closeMessage('dialog')" class="btn btn-outlinegrey u-mr10">BACK</a>
+          <a href="javascript:void(0)" onclick="" class="btn btn-primary">CONTINUE</a>
+        </div>
+      </div>
+    </dialog>
+
+    <section>
+    </section>
+
+    <!-- first past event start -->
+    <section class="slide" style="background-image: url('images/event.jpg'); height: 500px;">
+
+			<div class="bg-gradient2 u-pinbottom u-fullwidth u-ph60 u-pb80">
+        <h1 class="c-white u-mb10">Event name</h1>
+        <h4 class="c-white">Event subtitle</h4>
+      </div>
+
+		</section>
+
+    <section class="bg-greymedium">
+
+      <div class="row">
+        <div class="col-sm-6 col-nopadding">
+          <div class="content bg-white" style="margin-top: -60px;">
+
+            <a href="#attendees" class="btn btn-outline u-mr20">
+              ATTENDEES
+              <i class="ion ion-arrow-down-c ion-125x u-ml5"></i>
+            </a>
+            <a href="#photos" class="btn btn-outline u-mr20">
+              PHOTOS
+              <i class="ion ion-arrow-down-c ion-125x u-ml5"></i>
+            </a>
+            <a href="#reviews" class="btn btn-outline u-mr20">
+              REVIEWS
+              <i class="ion ion-arrow-down-c ion-125x u-ml5"></i>
+            </a>
+
+          </div>
+          <iframe
+            width="100%"
+            height="400"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyALCF1Bh451Q9OMZdDRL_fg_od31rogS50&q=Salt+Galata&language=tr_TR" allowfullscreen>
+          </iframe>
+          <!-- NB: API Key is for mockup purposes only. For production, a custom API Key should be generated for Mybestcook. -->
+          
+        </div>
+        <div class="col-sm-6 col-nopadding" style="margin-bottom: -60px;">
+          <div class="content bg-greylight">
+            <h4 class="c-grey u-mb20">HOST CHEF</h4>
+            <div class="u-clearfix">
+              <div class="badge badge-circle badge-huge u-floatleft u-mr30">
+                <img src="images/profil.jpg" alt="" />
+              </div>
+              <h2>Erhan Kayhan</h2>
+              <p>Turkish, mediterranean, crossover</p>
+              <a href="view-chef.html" class="btn btn-outline u-mt20">VIEW CHEF</a>
+            </div>
+          </div>
+          <div class="content bg-greymedium">
+            <p>date: <strong class="u-ml40">17 March 2015</strong></p>
+            <p>theme: <strong class="u-ml40">Indian, Indonesian, curry</strong></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="photos">
+      <div class="slides">
+        <img src="images/yemek_organizasyonu.jpg" alt="" />
+        <!-- <div style="background-image: url('images/yemek_organizasyonu.jpg'); height: 90vh;">
+        </div> -->
+      </div>
+    </section>
+
+    <section class="bg-greylight">
+      <div class="row">
+        <div id="attendees" class="col-sm-6 content bg-greylight" style="margin-top: -120px;">
+          <h3 class="c-grey u-mb20">ATTENDEES</h3>
+
+          <div class="u-clearfix u-mb20">
+            <div class="badge badge-circle u-floatleft u-mr20">
+              <img src="images/user_fallback.png" alt="" />
+            </div>
+            <h4 class="u-floatleft u-mt5">Sarah Jeanette Rose</h4>
+          </div>
+          <div class="u-clearfix u-mb20">
+            <div class="badge badge-circle u-floatleft u-mr20">
+              <img src="images/user_fallback.png" alt="" />
+            </div>
+            <h4 class="u-floatleft u-mt5">Sarah Jeanette Rose</h4>
+          </div>
+          <div class="u-clearfix u-mb20">
+            <div class="badge badge-circle u-floatleft u-mr20">
+              <img src="images/user_fallback.png" alt="" />
+            </div>
+            <h4 class="u-floatleft u-mt5">Sarah Jeanette Rose</h4>
+          </div>
+          <div class="u-clearfix u-mb20">
+            <div class="badge badge-circle u-floatleft u-mr20">
+              <img src="images/user_fallback.png" alt="" />
+            </div>
+            <h4 class="u-floatleft u-mt5">Sarah Jeanette Rose</h4>
+          </div>
+          <div class="u-clearfix u-mb20">
+            <div class="badge badge-circle u-floatleft u-mr20">
+              <img src="images/user_fallback.png" alt="" />
+            </div>
+            <h4 class="u-floatleft u-mt5">Sarah Jeanette Rose</h4>
+          </div>
+          <div class="u-clearfix u-mb20">
+            <div class="badge badge-circle u-floatleft u-mr20">
+              <img src="images/user_fallback.png" alt="" />
+            </div>
+            <h4 class="u-floatleft u-mt5">Sarah Jeanette Rose</h4>
+          </div>
+          <div class="u-clearfix u-mb20">
+            <div class="badge badge-circle u-floatleft u-mr20">
+              <img src="images/user_fallback.png" alt="" />
+            </div>
+            <h4 class="u-floatleft u-mt5">Sarah Jeanette Rose</h4>
+          </div>
+          <div class="u-clearfix u-mb20">
+            <div class="badge badge-circle u-floatleft u-mr20">
+              <img src="images/user_fallback.png" alt="" />
+            </div>
+            <h4 class="u-floatleft u-mt5">Sarah Jeanette Rose</h4>
+          </div>
+
+        </div>
+        <div class="col-sm-6 col-nopadding">
+          <div class="content bg-darkblue">
+            <p class="quote c-white u-mb20">Dolere malum est: in crucem qui agitur, beatus esse non potest. Duo Reges: constructio interrete. Claudii libidini, qui tum erat summo ne imperio, dederetur. Sic enim censent, oportunitatis esse beate vivere.</p>
+            <div class="badge badge-circle u-mr20 u-floatleft">
+              <img src="images/user_fallback.png" alt="" />
+            </div>
+            <h4 class="c-greylight u-pt10">Erhan Kayhan</h4>
+          </div>
+          <div class="content bg-winered">
+            <p>Want to be part of the community or attend an event?</p>
+            <form action="" class="newsletter u-clearfix u-mt10 u-mb20">
+              <div class="fieldset u-floatleft u-mt10">
+                <input type="email" class="field" placeholder="type your email for the"></input>
+                <div class="field-validation u-hide">Please fill in your email address.</div>
+              </div>
+              <a href="javascript:void(0)" class="btn btn-white u-floatleft u-mt10" onclick="submitDummyEffects($(this));">NEWSLETTER</a>
+              <div class="field-message u-mt20 u-hide">
+                <a href="javascript:void(0)" onclick="closeMessage($(this));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
+                Thanks! A confirmation email has been sent to your address.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <img src="images/logo.svg" width="200px" alt="" class="u-opacity50" />
+    </footer>
+
+	</body>
+
+</html>
