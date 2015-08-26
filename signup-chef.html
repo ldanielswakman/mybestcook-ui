@@ -42,7 +42,7 @@
 
 	<body id="top">
 
-    <nav>
+    <nav class="isWhite">
 
       <div class="nav-fav u-nowrap">
 
@@ -104,87 +104,96 @@
 
     </nav>
 
-		<section class="slide" style="background-image: url('images/video-preview.jpg')">
+    <div class="flash-container">
+    </div>
 
-      <div class="u-pincenter">
-        <div class="badge badge-circle badge-large bg-winered u-aligncenter">
-          <i class="ion ion-play ion-3x c-white" style="margin-top: 12px;"></i>
-        </div>
-      </div>
+		<section class="bg-greylight">
 
 			<div class="row">
-				<div class="col-sm-6 content u-pv30 bg-winered u-aligncenter">
-					<img id="logo" src="images/logo.svg" alt="" />
-				</div>
-			</div>
-
-    </section>
-
-    <section>
-
-			<div class="row">
-        <div class="col-sm-6 col-nopadding content">
-
-          <h4 class="u-mb20">THE STORY</h4>
-
-          <p><big><em>mybestcook</em> is a platform aimed at bringing together talented and ambitious local chefs with the audience that loves great food.</big></p>
-
-          <p>We build a community that showcases the chefs and their food in an interactive website, as well as organises culinary evenings. We build a community that showcases the chefs and their food in an interactive website, as well as organises culinary evenings.</p>
-
-          <p>We build a community that showcases the chefs and their food in an interactive website, as well as organises culinary evenings. We build a community that showcases the chefs and their food in an interactive website, as well as organises culinary evenings.</p>
-
-        </div>
-        <div class="col-sm-6 col-nopadding" style="margin-top: -60px;">
-
-          <a href="javascript:void(0)" class="u-block content bg-darkblue u-aligncenter">
-            <h2>WATCH THE VIDEO FOR A QUICK TOUR</h2>
-          </a>
-
-          <div class="row bg-greylight u-pv30">
-            <div class="col-sm-6 content-small">
-              <h4 class="c-winered u-mr40">CONNECTED CHEFS</h4>
-              <big><big>37</big></big>
-            </div>
-            <div class="col-sm-6 content-small">
-              <h4 class="c-winered u-mr40">MEMBERS SIGNED UP</h4>
-              <big><big>381</big></big>
-            </div>
-            <div class="col-sm-6 content-small">
-              <h4 class="c-winered u-mr40">FOUNDED</h4>
-              <big><big>2009</big></big>
-            </div>
-            <div class="col-sm-6 content-small">
-              <h4 class="c-winered u-mr40">STATISTIC</h4>
-              <big><big>value</big></big>
-            </div>
-            <div class="col-sm-6 content-small">
-              <h4 class="c-winered u-mr40">ORGANISATION</h4>
-              <big><big>Can Hüzmeli</big></big>
-            </div>
-            <div class="col-sm-6 content-small">
-              <h4 class="c-winered u-mr40">CONNECTED PARTNERS</h4>
-              <big><big>...<br />...</big></big>
-            </div>
+				<div class="col-sm-6 col-nopadding">
+          <div class="content u-pv30 bg-winered u-aligncenter">
+            <img id="logo" src="images/logo.svg" alt="" />
           </div>
+          <div class="content bg-darkblue">
 
-          <div class="content bg-winereddark">
-            <p class="c-white">Or are you a food fan and just want to stay in the loop?</p>
-            <form action="" class="newsletter u-mt10">
-              <div class="fieldset u-floatleft u-mt10">
-                <input type="email" class="field" placeholder="type your email for the"></input>
+            <h3>SIGN UP AS A CHEF</h3>
+
+            <form action="" class="u-mb20">
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>name</small></label>
+                <input type="text" class="field u-fullwidth" placeholder="name"></input>
+                <div class="field-validation u-hide">Please fill in your name.</div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>email address</small></label>
+                <input type="email" class="field u-fullwidth" placeholder="email address"></input>
                 <div class="field-validation u-hide">Please fill in your email address.</div>
               </div>
-              <a href="javascript:void(0)" class="btn btn-white u-floatleft u-mt10" onclick="submitDummyEffects($(this));">NEWSLETTER</a>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>restaurant name (optional)</small></label>
+                <input type="text" class="field u-fullwidth" placeholder="restaurant name (optional)"></input>
+                <div class="field-validation u-hide"></div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>password</small></label>
+                <input type="password" class="field u-fullwidth" placeholder="password"></input>
+                <div class="field-validation u-hide">Please fill in your password.</div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>password (again)</small></label>
+                <input type="password" class="field u-fullwidth u-mb20" placeholder="password (again)"></input>
+                <div class="field-validation u-hide">Password does not match.</div>
+              </div>
+              <div class="fieldset fieldset-checkbox u-mb20">
+                <input type="checkbox" id="agree"></input>
+                <label for="agree"><span>I agree with the <a href="about.html">Terms & Conditions</a></span></label>
+                <div class="field-validation u-hide">Please accept the Terms and Conditions before you can continue.</div>
+              </div>
+              <button type="submit" href="javascript:void(0)"class="btn btn-large btn-white u-mb10" onclick="submitDummyEffects($(this));">CREATE ACCOUNT</button>
+              <br />
               <div class="field-message u-mt20 u-hide">
-                <a href="javascript:void(0)" onclick="closeMessage($(this).closest('.field-message'));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
+                <a href="javascript:void(0)" onclick="closeMessage($(this));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
                 Thanks! A confirmation email has been sent to your address.
               </div>
             </form>
+
+          </div>
+				</div>
+        <div class="col-sm-6 col-nopadding">
+          <div class="navplaceholder"></div>
+
+          <div class="content">
+
+            <form action="login" class="u-mb20">
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>email address</small></label>
+                <input type="email" class="field field-white u-fullwidth" placeholder="email address"></input>
+                <div class="field-validation u-hide">Please fill in your email address.</div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>password</small></label>
+                <input type="password" class="field field-white u-fullwidth u-mb20" placeholder="password"></input>
+                <div class="field-validation u-hide">Please fill in your password.</div>
+              </div>
+              <button type="submit" href="javascript:void(0)"class="btn u-mb10 u-floatright" onclick="submitDummyEffects($(this));">LOGIN</button>
+
+              <div class="fieldset fieldset-checkbox u-mb20">
+                <input type="checkbox" id="pwforgot"></input>
+                <label for="pwforgot"><span>Forgot my password</span></label>
+              </div>
+
+              <div class="field-message u-mt20 u-hide">
+                <a href="javascript:void(0)" onclick="closeMessage($(this));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
+                Fill in your email address 
+              </div>
+            </form>
+
           </div>
 
         </div>
+      </div>
 
-		</section>
+    </section>
 
     <footer>
       <img src="images/logo.svg" width="200px" alt="" class="u-opacity50" />

@@ -40,12 +40,25 @@
     color: fade(@black, 25%);
   }
   &[disabled] {
+    background-color: fade(@black, 5%);
     color: fade(@white, 50%);
+    pointer-events: none;
   }
   &.field-hasError {
     padding: 8px 20px;
     border: 2px solid @white;
     .animation(shake 0.2s 2 linear);
+  }
+  &.field-white {
+    background-color: @white;
+
+    &:focus {
+      background-color: fade(@black, 20%);
+    }
+    &[disabled] {
+      background-color: fade(@black, 5%);
+      color: fade(@white, 50%);
+    }
   }
 }
 select:hover {
@@ -53,6 +66,46 @@ select:hover {
 }
 .fieldset {
   position: relative;
+
+  label {
+    opacity: 0;
+    .transition(0.3s);
+  }
+  &.hasContent label {
+    opacity: 0.5;
+  }
+  &.fieldset-checkbox {
+    input[type="checkbox"] {
+      position: absolute;
+      left: -9999px;
+
+      &:checked + label:before {
+        content: "\f120";
+        font-size: 37px;
+        opacity: 1;
+      }
+    }
+    label {
+      opacity: 1;
+      cursor: pointer;
+
+      &:before {
+        content: "\f21b";
+        display: inline-block;
+        float: left;
+        width: 42px;
+        margin-right: 5px;
+        font-family: "Ionicons";
+        font-size: 40px;
+        line-height: 40px;
+        opacity: 0.3;
+      }
+      span {
+        display: inline-block;
+        margin-top: 10px;
+      }
+    }
+  }
 }
 .fieldset-hasIcon {
   position: relative;

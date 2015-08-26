@@ -23,6 +23,7 @@ $(document).ready(function() {
     $(this).removeClass('field-hasError');
     $(this).closest('.fieldset').find('.field-validation').fadeOut();
   });
+
   $('#navbutton').click(function() {
     $('nav').toggleClass('isActive');
   });
@@ -33,6 +34,27 @@ $(document).ready(function() {
     }
     e.preventDefault();
   }));
+
+  $('.field').bind('input', function() {
+    if ($(this).val() == '') {
+      $(this).closest('.fieldset').removeClass('hasContent');
+    } else {
+      $(this).closest('.fieldset').addClass('hasContent');
+    }
+  });
+
+  $(document).on('change', '#pwforgot', function(event) {
+    $form = $(this).closest('form');
+    if ($form.attr('action') == 'login') {
+      $form.find('button[type="submit"]').html('RESET PASSWORD');
+      $form.find('input[type="password"]').attr('disabled', true);
+      $form.attr('action', 'pwreset');
+    } else {
+      $form.find('button[type="submit"]').html('LOGIN');
+      $form.find('input[type="password"]').removeAttr('disabled');
+      $form.attr('action', 'login');
+    }
+  });
 
 });
 

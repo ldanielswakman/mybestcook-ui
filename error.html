@@ -42,7 +42,7 @@
 
 	<body id="top">
 
-    <nav>
+    <nav class="isWhite">
 
       <div class="nav-fav u-nowrap">
 
@@ -88,7 +88,7 @@
               </a>
           </li>
           <li>
-            <a href="signup-chef">
+            <a href="signup-chef.html">
               <i class="ion ion-person-add ion-15x ion-fw u-floatleft u-mt5 u-mr20 u-aligncenter"></i>
               <div class="u-mt10">Sign up (chef)</div>
             </a>
@@ -103,6 +103,38 @@
       </div>
 
     </nav>
+
+    <div class="flash-container">
+    </div>
+
+    <a href="javascript:closeMessage('dialog')" class="dialog-mask"></a>
+
+    <dialog id="dialog_login" class="bg-greylight">
+      <div class="row u-alignleft">
+        <div class="col-sm-6 content">
+          <h2 class="c-winered u-mb20">LOG IN</h2>
+          <h4 class="c-grey">IF YOU HAVE A MYBESTCOOK ACCOUNT AS A CHEF, YOU CAN LOG IN HERE.</h4>
+        </div>
+        <div class="col-sm-6 content u-pv40 bg-white">
+          <div class="u-clearfix u-mb10">
+            <a href="javascript:closeMessage('dialog')" class="u-floatright u-pa10 c-grey"><i class="ion ion-android-close ion-15x"></i></a>
+          </div>
+          <form action="">
+          <form action="" class="newsletter u-mb20">
+            <div class="fieldset u-floatleft">
+              <input type="email" class="field" placeholder="email address"></input>
+              <div class="field-validation u-hide">Please fill in your email address.</div>
+            </div>
+            <button type="submit" href="javascript:void(0)"class="btn btn-primary u-floatright" onclick="submitDummyEffects($(this));">LOGIN</button>
+            <div class="field-message u-mt20 u-hide">
+              <a href="javascript:void(0)" onclick="closeMessage($(this));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
+              Thanks! A confirmation email has been sent to your address.
+            </div>
+          </form>
+          </form>
+        </div>
+      </div>
+    </dialog>
 
 		<section>
 
