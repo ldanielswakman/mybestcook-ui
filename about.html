@@ -104,6 +104,50 @@
 
     </nav>
 
+    <div class="flash-container">
+    </div>
+
+    <a href="javascript:closeMessage('dialog')" class="dialog-mask"></a>
+
+    <dialog id="dialog_login" class="bg-greylight">
+      <div class="row u-alignleft">
+        <div class="col-sm-6 content">
+          <h2 class="c-winered u-mb20">LOG IN</h2>
+          <h4 class="c-grey">IF YOU HAVE A MYBESTCOOK ACCOUNT AS A CHEF, YOU CAN LOG IN HERE.</h4>
+        </div>
+        <div class="col-sm-6 content u-pv40 bg-white">
+          <div class="u-clearfix">
+            <a href="javascript:closeMessage('dialog')" class="u-floatright u-pa10 c-grey"><i class="ion ion-android-close ion-15x"></i></a>
+          </div>
+
+            <form action="login" class="u-mb20">
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>email address</small></label>
+                <input type="email" class="field field-dark u-fullwidth" placeholder="email address"></input>
+                <div class="field-validation u-hide">Please fill in your email address.</div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>password</small></label>
+                <input type="password" class="field field-dark u-fullwidth u-mb20" placeholder="password"></input>
+                <div class="field-validation u-hide">Please fill in your password.</div>
+              </div>
+              <button type="submit" href="javascript:void(0)"class="btn btn-primary u-mb10 u-floatright" onclick="submitDummyEffects($(this));">LOGIN</button>
+
+              <div class="fieldset fieldset-checkbox u-mb20 u-floatleft">
+                <input type="checkbox" id="pwforgot"></input>
+                <label for="pwforgot"><span>Forgot my password</span></label>
+              </div>
+
+              <div class="field-message u-mt20 u-hide">
+                <a href="javascript:void(0)" onclick="closeMessage($(this));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
+                Fill in your email address 
+              </div>
+            </form>
+
+        </div>
+      </div>
+    </dialog>
+
 		<section class="slide" style="background-image: url('images/video-preview.jpg')">
 
       <div class="u-pincenter">
