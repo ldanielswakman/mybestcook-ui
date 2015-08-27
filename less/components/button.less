@@ -44,6 +44,10 @@
     &:active {
       background-color: darken(@burgundy, 20%);
     }
+    &.isBusy:before,
+    &.isSuccess:before {
+      background-color: @burgundy;
+    }
   }
   &.btn-empty {
     background-color: transparent;
@@ -69,7 +73,11 @@
     border: 1px solid @burgundy;
     color: @burgundy;
 
-    &:hover {
+    &:hover,
+    &.isBusy:before,
+    &.isSuccess:before,
+    &.isBusy:before:hover,
+    &.isSuccess:before:hover {
       background-color: @burgundy;
       color: @white;
     }
@@ -144,4 +152,34 @@
 @keyframes spinning {
     0% { transform: rotate(0); }
   100% { transform: rotate(360deg); }
+}
+
+// follow button content
+.btn {
+  &.follow-button {
+    .follow-button-content {
+      display: inline-block;
+    }
+    .followed-button-content,
+    .unfollow-button-content {
+      display: none;
+    }
+  }
+  &.followed-button {
+    .followed-button-content {
+      display: inline-block;
+    }
+    .follow-button-content,
+    .unfollow-button-content {
+      display: none;
+    }
+    &:hover {
+      .followed-button-content {
+        display: none;
+      }
+      .unfollow-button-content {
+        display: inline-block;
+      }
+    }
+  }
 }

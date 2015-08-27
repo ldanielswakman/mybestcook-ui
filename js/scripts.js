@@ -142,6 +142,30 @@ function submitDummyEffects(obj) {
   });
 }
 
+// submit button effects (UI mockup only)
+function followChefDummy(obj) {
+  if(obj.hasClass('btn')) {
+    obj.addClass('isBusy');
+    setTimeout(function() {
+      obj.removeClass('isBusy btn-outline follow-button').addClass('btn-primary followed-button');
+      obj.attr('onclick', 'unFollowChefDummy($(this))');
+    }, 1000);
+  } else {
+    console.log('No button found.');
+  }
+}
+function unFollowChefDummy(obj) {
+  if(obj.hasClass('btn')) {
+    obj.addClass('isBusy');
+    setTimeout(function() {
+      obj.removeClass('isBusy btn-primary followed-button').addClass('btn-outline follow-button');
+      obj.attr('onclick', 'followChefDummy($(this))');
+    }, 1000);
+  } else {
+    console.log('No button found.');
+  }
+}
+
 $(window).scroll(function() { scrollActions(); });
 $(window).resize(function() { scrollActions(); });
 $(document).bind("scrollstart", function() { scrollActions(); });
