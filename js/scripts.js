@@ -31,6 +31,7 @@ $(document).ready(function() {
   $('body').bind('keyup', (function(e) {
     if(e.keyCode == 27) {
       closeMessage('dialog');
+      closeMessage('nav');
     }
     e.preventDefault();
   }));
@@ -94,6 +95,8 @@ function closeMessage(target) {
   if (target == 'dialog') {
     $('.dialog-mask').removeClass('isVisible');
     $('dialog').removeClass('isVisible');
+  } else if (target == 'nav') {
+    $('nav').removeClass('isActive');
   } else {
     target.fadeOut();
   }
