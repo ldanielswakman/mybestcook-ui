@@ -42,6 +42,15 @@
 
 	<body id="top">
 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=1458298001134890";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <nav class="isWhite">
 
     	<div class="nav-fav u-nowrap">
@@ -102,6 +111,95 @@
 
     <a href="javascript:closeMessage('dialog')" class="dialog-mask"></a>
 
+    <dialog id="dialog_rate" class="bg-greylight">
+      <div class="row u-alignleft">
+        <div class="col-sm-6 content">
+          <h2 class="c-winered u-mb20">
+            RATE CHEF
+            <i class="ion ion-arrow-right-c ion-15x u-ml10 u-floatright c-greymedium"></i>
+          </h2>
+          <h4 class="c-grey u-mb20">HOW DO YOU VALUE ERHAN KAYHAN IN THE FOLLOWING ASPECTS?</h4>
+          <a href="javascript:closeMessage('dialog')" class="btn btn-outlinegrey u-mr10">CANCEL</a>
+          <a href="javascript:void(0)" onclick="" class="btn btn-primary">SUBMIT</a>
+        </div>
+        <div class="col-sm-6 content u-pv40 bg-white">
+          <div class="u-clearfix u-mb10">
+            <a href="javascript:closeMessage('dialog')" class="u-floatright u-pa10 c-grey"><i class="ion ion-android-close ion-15x"></i></a>
+          </div>
+          <div class="row u-mv20">
+            <!-- flavor -->
+            <div class="col-xs-5 col-nopadding u-mb10">
+              <label>flavor</label>
+            </div>
+            <div class="col-xs-7 col-nopadding u-mb10">
+              <div class="fieldset-hasIcon u-ml20">
+                <select class="field field-dark">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <i class="ion ion-arrow-down-b"></i>
+              </div>
+            </div>
+            <!-- timing -->
+            <div class="col-xs-5 col-nopadding u-mb10">
+              <label>timing</label>
+            </div>
+            <div class="col-xs-7 col-nopadding u-mb10">
+              <div class="fieldset-hasIcon u-ml20">
+                <select class="field field-dark">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <i class="ion ion-arrow-down-b"></i>
+              </div>
+            </div>
+            <!-- presentation -->
+            <div class="col-xs-5 col-nopadding u-mb10">
+              <label>presentation</label>
+            </div>
+            <div class="col-xs-7 col-nopadding u-mb10">
+              <div class="fieldset-hasIcon u-ml20">
+                <select class="field field-dark">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <i class="ion ion-arrow-down-b"></i>
+              </div>
+            </div>
+            <!-- communication -->
+            <div class="col-xs-5 col-nopadding u-mb10">
+              <label>communication</label>
+            </div>
+            <div class="col-xs-7 col-nopadding u-mb10">
+              <div class="fieldset-hasIcon u-ml20">
+                <select class="field field-dark">
+                  <option></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <i class="ion ion-arrow-down-b"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
 		<section>
 
 			<div class="row bg-greylight">
@@ -109,14 +207,16 @@
           <div class="slide" style="background-image: url('images/profil.jpg'); height: 400px">
           </div>
           <div class="content">
-            <div class="u-floatright">
-              <i class="ion ion-android-star c-winered"></i>
-              <i class="ion ion-android-star c-winered"></i>
-              <i class="ion ion-android-star c-winered"></i>
-              <i class="ion ion-android-star-half c-winered"></i>
-              <i class="ion ion-android-star-outline c-winered"></i>
+            <div class="u-clearfix">
+              <div class="u-floatright">
+                <i class="ion ion-android-star c-winered"></i>
+                <i class="ion ion-android-star c-winered"></i>
+                <i class="ion ion-android-star c-winered"></i>
+                <i class="ion ion-android-star-half c-winered"></i>
+                <i class="ion ion-android-star-outline c-winered"></i>
+              </div>
+              <h4>RATING</h4>
             </div>
-            <h4>RATING</h4>
             <div class="rating u-mt20 u-ph10 u-inlineblock u-aligncenter">
               <h1>3.9</h1>
               <label class="u-mt10">flavor</label>
@@ -139,7 +239,8 @@
             </div>
 
             <div class="actions u-mt20">
-              <a href="javascript:void(0)" onclick="followChefDummy($(this))" class="btn btn-outline follow-button">
+              <!-- Don't show when chef logged in -->
+              <a href="javascript:void(0)" onclick="followChefDummy($(this))" class="btn btn-outline follow-button u-mr10 u-mb10">
                 <span class="follow-button-content">
                   <i class="ion ion-bookmark ion-15x u-mr5"></i>
                   FOLLOW
@@ -152,6 +253,15 @@
                   <i class="ion ion-android-close ion-15x u-mr5"></i>
                   UNFOLLOW
                 </span>
+              </a>
+              <!-- Don't show when chef logged in -->
+              <a href="javascript:void(0)" onclick="openDialog('rate');" class="btn btn-outline u-mr10 u-mb10">
+                <i class="ion ion-android-star ion-15x u-mr5"></i>
+                RATE
+              </a>
+              <!-- For logged in chefs only -->
+              <a href="javascript:void(0)" class="btn btn-outlinegrey u-mr10 u-mb10">
+                EDIT MY PROFILE
               </a>
             </div>
 
@@ -177,6 +287,9 @@
 
               <p>Below we've put together a list of suggested activities for under 3s, 3 - 5 year olds, 5 - 7 years olds, 8 - 11 year olds and children 12 and above.</p>
             </small>
+            <div class="u-mt30">
+            </div>
+            <div class="fb-comments" data-href="https://dl.dropboxusercontent.com/u/3455966/mybestcook/view-chef.html" data-width="100%" data-numposts="3"></div>
           </div>
         </div>
 			</div>
