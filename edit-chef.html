@@ -164,54 +164,56 @@
             <form action="editdishes" class="u-mb20">
 
               <!-- Dish -->
-              <div class="fieldset">
-                <label class="u-ml20 u-mb5"><small>name</small></label>
-                <input type="text" class="field field-dark u-fullwidth" placeholder="name" value="Middle Eastern"></input>
-                <div class="field-validation u-hide">Please fill out this field.</div>
-              </div>
-              <div class="fieldset">
-                <label class="u-ml20 u-mb5"><small>description</small></label>
-                <textarea type="text" class="field field-dark u-fullwidth" placeholder="description" value="" rows="3">But no one's perfect. The flu hits. You've had a rough week at work. You're starving and need to make dinner in five minutes. None of those situations permit a leisurely hour of simmering and blending, so you've got to do it. When things get dire, you've got to go to the pantry (which as food lovers we equate with "going to the mattresses"). Lucky for you, some canned (or boxed, now that we're in 2013) tomato soups are actually pretty delicious. Our job was to find them and tell you all about it.</textarea>
-                <div class="field-validation u-hide">Please fill out this field.</div>
-              </div>
-              <div class="u-floatright u-mt10">
-                <div class="badge badge-square" style="">
-                  <img src="images/patlican.jpeg" alt="" />
+              <div class="dish">
+                <div class="fieldset">
+                  <label class="u-ml20 u-mb5"><small>name</small></label>
+                  <input type="text" class="field field-dark u-fullwidth" placeholder="name" value="Middle Eastern"></input>
+                  <div class="field-validation u-hide">Please fill out this field.</div>
                 </div>
+                <div class="fieldset">
+                  <label class="u-ml20 u-mb5"><small>description</small></label>
+                  <textarea type="text" class="field field-dark u-fullwidth" placeholder="description" value="" rows="3">But no one's perfect. The flu hits. You've had a rough week at work. You're starving and need to make dinner in five minutes. None of those situations permit a leisurely hour of simmering and blending, so you've got to do it. When things get dire, you've got to go to the pantry (which as food lovers we equate with "going to the mattresses"). Lucky for you, some canned (or boxed, now that we're in 2013) tomato soups are actually pretty delicious. Our job was to find them and tell you all about it.</textarea>
+                  <div class="field-validation u-hide">Please fill out this field.</div>
+                </div>
+                <div class="u-floatright u-mt10">
+                  <div class="badge badge-square" style="">
+                    <img src="images/patlican.jpeg" alt="" />
+                  </div>
+                </div>
+                <div class="fieldset">
+                  <label class="u-ml20 u-mb5"><small>image</small></label>
+                  <input type="file" class="field field-dark"></input>
+                  <div class="field-validation u-hide">Please fill out this field.</div>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-outline btn-small u-mv20" onclick="removeDish($(this))"><i class="ion ion-close u-mr10"></i>REMOVE</a>
+                <hr />
               </div>
-              <div class="fieldset">
-                <label class="u-ml20 u-mb5"><small>image</small></label>
-                <input type="file" class="field field-dark"></input>
-                <div class="field-validation u-hide">Please fill out this field.</div>
-              </div>
-              <button type="submit" href="javascript:void(0)" class="btn btn-outline btn-small u-mv20" onclick=""><i class="ion ion-close u-mr10"></i>REMOVE</button>
-
-              <hr />
 
               <!-- Dish -->
-              <div class="fieldset">
-                <label class="u-ml20 u-mb5"><small>name</small></label>
-                <input type="text" class="field field-dark u-fullwidth" placeholder="name" value=""></input>
-                <div class="field-validation u-hide">Please fill out this field.</div>
-              </div>
-              <div class="fieldset">
-                <label class="u-ml20 u-mb5"><small>description</small></label>
-                <textarea type="text" class="field field-dark u-fullwidth" placeholder="description" value="" rows="3"></textarea>
-              </div>
-              <div class="u-floatright u-mt10">
-                <div class="badge badge-square" style="">
+              <div class="dish">
+                <div class="fieldset">
+                  <label class="u-ml20 u-mb5"><small>name</small></label>
+                  <input type="text" class="field field-dark u-fullwidth" placeholder="name" value=""></input>
+                  <div class="field-validation u-hide">Please fill out this field.</div>
                 </div>
+                <div class="fieldset">
+                  <label class="u-ml20 u-mb5"><small>description</small></label>
+                  <textarea type="text" class="field field-dark u-fullwidth" placeholder="description" value="" rows="3"></textarea>
+                </div>
+                <div class="u-floatright u-mt10">
+                  <div class="badge badge-square" style="">
+                  </div>
+                </div>
+                <div class="fieldset">
+                  <label class="u-ml20 u-mb5"><small>image</small></label>
+                  <input type="file" class="field field-dark"></input>
+                  <div class="field-validation u-hide">Please fill out this field.</div>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-outline btn-small u-mv20" onclick="removeDish($(this))"><i class="ion ion-close u-mr10"></i>REMOVE</a>
+                <hr />
               </div>
-              <div class="fieldset">
-                <label class="u-ml20 u-mb5"><small>image</small></label>
-                <input type="file" class="field field-dark"></input>
-                <div class="field-validation u-hide">Please fill out this field.</div>
-              </div>
-              <button type="submit" href="javascript:void(0)" class="btn btn-outline btn-small u-mv20" onclick=""><i class="ion ion-close u-mr10"></i>REMOVE</button>
 
-              <hr />
-
-              <a href="javascript:void(0)" class="btn btn-outline u-mv10 u-mr20">ADD DISH</a>
+              <a href="javascript:void(0)" class="btn btn-outline u-mv10 u-mr20" onclick="addDish($(this))">ADD DISH</a>
               <a href="view-chef.html" class="btn btn-primary u-mv10 u-mr20">SAVE CHANGES</a>
 
             </form>

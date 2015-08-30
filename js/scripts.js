@@ -149,7 +149,6 @@ function submitDummyEffects(obj) {
 
   });
 }
-
 // submit button effects (UI mockup only)
 function followChefDummy(obj) {
   if(obj.hasClass('btn')) {
@@ -172,6 +171,10 @@ function unFollowChefDummy(obj) {
   } else {
     console.log('No button found.');
   }
+}
+// add/remove dish (edit profile) dummy
+function removeDish(obj) {
+  obj.closest('.dish').fadeOut();
 }
 
 $(window).scroll(function() { scrollActions(); });
