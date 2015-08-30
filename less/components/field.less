@@ -44,6 +44,9 @@
     color: fade(@white, 50%);
     pointer-events: none;
   }
+  &[type="file"] {
+    cursor: pointer;
+  }
   &.field-hasError {
     padding: 8px 20px;
     border: 2px solid @white;
@@ -70,6 +73,11 @@
       background-color: fade(@black, 20%);
     }
   }
+}
+textarea.field {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
 }
 select:hover {
   cursor: pointer;
@@ -173,6 +181,50 @@ select:hover {
 
   &:before {
     border-width: 5px;
+  }
+}
+.bootstrap-tagsinput {
+  .field;
+  .field-dark;
+  .u-fullwidth;
+  height: auto;
+
+  input {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: auto !important;
+    max-width: inherit;
+    min-width: 0;
+    line-height: 20px;
+    padding-top: 5px;
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+  .tag {
+    background-color: @burgundy;
+    line-height: 12px;
+    padding: 3px 8px;
+    margin-bottom: 5px;
+    .rounded(13px);
+
+    span[data-role="remove"]:before {
+      content: "\f2d7";
+      font-family: "Ionicons";
+      margin-left: 5px;
+      margin-right: 3px;
+      cursor: pointer;
+      color: fade(@white, 70%);
+    }
+    span[data-role="remove"]:hover:before {
+      color: @white;
+    }
   }
 }
 

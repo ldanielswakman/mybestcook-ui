@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title>mybestcook</title>
+
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="L Daniel Swakman, www.ldaniel.eu" />
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+	  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	  <link rel="icon" href="images/favicon.ico">
+	  <!-- 'Use as mobile app' configurations -->
+	  <link rel="manifest" href="manifest.json">
+	  <meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#b21e52">
+		<meta name="msapplication-navbutton-color" content="#b21e52">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#b21e52">
+		<link rel="apple-touch-icon" href="images/app-icons/launcher-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/app-icons/launcher-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/app-icons/launcher-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/app-icons/launcher-icon-152x152.png">
+
+		<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+    <script src="js/bootstrap-tagsinput.min.js"></script>
+		<script src="js/scripts.js"></script>
+
+	</head>
+
+	<body id="top">
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=1458298001134890";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <nav class="isWhite">
+
+    	<div class="nav-fav u-nowrap">
+
+	      <a href="javascript:void(0)" id="navbutton" class="btn btn-empty btn-lg u-floatright">
+	        <i class="ion ion-drag ion-15x ion-fw"></i>
+	        <i class="ion ion-android-close ion-15x ion-fw u-hide"></i>
+	      </a>
+	      <ul class="menu-fav u-clearfix">
+          <li>
+            <a href="index.html" class="btn btn-empty u-ph10 u-opacity50"><i class="ion ion-android-home ion-15x"></i></a>
+          </li>
+	        <li>
+	          <a href="list-chefs.html" class="btn btn-empty">Browse chefs</a>
+	        </li>
+	        <li>
+	          <a href="list-events.html" class="btn btn-empty">Events</a>
+	        </li>
+	      </ul>
+
+      </div>
+
+      <a href="javascript:closeMessage('nav');" class="nav-mask"></a>
+
+      <div class="nav-panel">
+      	<ul class="menu-full">
+      		<li>
+      			<a href="list-chefs.html">
+              <i class="ion ion-person-stalker ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Browse chefs</div>
+            </a>
+      		</li>
+      		<li>
+      			<a href="list-events.html">
+              <i class="ion ion-android-calendar ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Browse events</div>
+              </a>
+      		</li>
+      		<li>
+      			<a href="view-chef.html">
+              <i class="ion ion-person ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">My profile</div>
+            </a>
+      		</li>
+      		<li>
+      			<a href="index.html">
+              <i class="ion ion-log-out ion-2x ion-fw u-floatleft u-mr20 u-aligncenter"></i>
+              <div class="u-mt10">Log out</div>
+            </a>
+      		</li>
+      	</ul>
+      </div>
+
+    </nav>
+
+    <div class="flash-container">
+    </div>
+
+    <a href="javascript:closeMessage('dialog')" class="dialog-mask"></a>
+
+		<section>
+
+			<div class="row bg-greylight">
+				<div class="col-sm-6 col-nopadding">
+          <div class="content">
+            <h2 class="u-mb40">EDIT PROFILE</h2>
+            <h4 class="u-mb20">BASIC INFO</h4>
+
+            <form action="editprofile" class="u-mb20">
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>first name</small></label>
+                <input type="text" class="field field-dark u-fullwidth" placeholder="first name" value="Erhan"></input>
+                <div class="field-validation u-hide">Please fill out this field.</div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>last name</small></label>
+                <input type="text" class="field field-dark u-fullwidth" placeholder="last name" value="Kayhan"></input>
+                <div class="field-validation u-hide">Please fill out this field.</div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>restaurant name (optional)</small></label>
+                <input type="text" class="field field-dark u-fullwidth" placeholder="restaurant name (optional)" value=""></input>
+                <div class="field-validation u-hide">Please fill out this field.</div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>cuisine type (max 3)</small></label>
+                <input type="text" data-role="tagsinput" class="field field-tag u-fullwidth" placeholder="" value="mediterranean, crossover"></input>
+                <div class="field-validation u-hide">Please fill out this field.</div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>description</small></label>
+                <textarea type="text" class="field field-dark u-fullwidth" placeholder="description" value="" rows="5"></textarea>
+                <div class="field-validation u-hide">Please fill out this field.</div>
+              </div>
+              <button href="view-chef.html" class="btn btn-primary u-mv20 u-floatright" onclick="">SAVE CHANGES</button>
+
+              <div class="field-message u-mt20 u-hide">
+                <a href="javascript:void(0)" onclick="closeMessage($(this));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
+                Fill in your email address 
+              </div>
+            </form>
+
+          </div>
+				</div>
+        <div class="col-sm-6 col-nopadding">
+          <div class="navplaceholder"></div>
+          <div class="content bg-white">
+            <h4 class="u-mb20">DISHES</h4>
+
+            <form action="editdishes" class="u-mb20">
+
+              <!-- Dish -->
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>name</small></label>
+                <input type="text" class="field field-dark u-fullwidth" placeholder="name" value="Middle Eastern"></input>
+                <div class="field-validation u-hide">Please fill out this field.</div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>description</small></label>
+                <textarea type="text" class="field field-dark u-fullwidth" placeholder="description" value="" rows="3">But no one's perfect. The flu hits. You've had a rough week at work. You're starving and need to make dinner in five minutes. None of those situations permit a leisurely hour of simmering and blending, so you've got to do it. When things get dire, you've got to go to the pantry (which as food lovers we equate with "going to the mattresses"). Lucky for you, some canned (or boxed, now that we're in 2013) tomato soups are actually pretty delicious. Our job was to find them and tell you all about it.</textarea>
+                <div class="field-validation u-hide">Please fill out this field.</div>
+              </div>
+              <div class="u-floatright u-mt10">
+                <div class="badge badge-square" style="">
+                  <img src="images/patlican.jpeg" alt="" />
+                </div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>image</small></label>
+                <input type="file" class="field field-dark"></input>
+                <div class="field-validation u-hide">Please fill out this field.</div>
+              </div>
+              <button type="submit" href="javascript:void(0)" class="btn btn-outline btn-small u-mv20" onclick=""><i class="ion ion-close u-mr10"></i>REMOVE</button>
+
+              <hr />
+
+              <!-- Dish -->
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>name</small></label>
+                <input type="text" class="field field-dark u-fullwidth" placeholder="name" value=""></input>
+                <div class="field-validation u-hide">Please fill out this field.</div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>description</small></label>
+                <textarea type="text" class="field field-dark u-fullwidth" placeholder="description" value="" rows="3"></textarea>
+              </div>
+              <div class="u-floatright u-mt10">
+                <div class="badge badge-square" style="">
+                </div>
+              </div>
+              <div class="fieldset">
+                <label class="u-ml20 u-mb5"><small>image</small></label>
+                <input type="file" class="field field-dark"></input>
+                <div class="field-validation u-hide">Please fill out this field.</div>
+              </div>
+              <button type="submit" href="javascript:void(0)" class="btn btn-outline btn-small u-mv20" onclick=""><i class="ion ion-close u-mr10"></i>REMOVE</button>
+
+              <hr />
+
+              <a href="javascript:void(0)" class="btn btn-outline u-mv10 u-mr20">ADD DISH</a>
+              <a href="view-chef.html" class="btn btn-primary u-mv10 u-mr20">SAVE CHANGES</a>
+
+            </form>
+
+          </div>
+        </div>
+			</div>
+
+    </section>
+
+    <footer>
+      <img src="images/logo.svg" width="200px" alt="" class="u-opacity50" />
+    </footer>
+
+	</body>
+
+</html>

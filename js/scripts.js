@@ -16,6 +16,14 @@ $(document).ready(function() {
     });
   }
 
+  $('.field').each(function() {
+    if ($(this).val() == '') {
+      $(this).closest('.fieldset').removeClass('hasContent');
+    } else {
+      $(this).closest('.fieldset').addClass('hasContent');
+    }
+  });
+
   scrollActions();
 
   // listeners
