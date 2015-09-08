@@ -122,13 +122,22 @@
 
             <form action="editprofile" class="u-mb20">
               <div class="fieldset">
-                <label class="u-ml20 u-mb5"><small>first name</small></label>
-                <input type="text" class="field field-dark u-fullwidth" placeholder="first name" value="Erhan"></input>
+                <label class="u-ml20 u-mb5"><small>name</small></label>
+                <input type="text" class="field field-dark u-fullwidth" placeholder="name" value="Erhan"></input>
                 <div class="field-validation u-hide">Please fill out this field.</div>
               </div>
               <div class="fieldset">
-                <label class="u-ml20 u-mb5"><small>last name</small></label>
-                <input type="text" class="field field-dark u-fullwidth" placeholder="last name" value="Kayhan"></input>
+              <div class="fieldset fieldset-hasIcon u-fullwidth">
+                <label class="u-ml20 u-mb5"><small>city</small></label>
+                <select class="field field-dark u-fullwidth">
+                  <option disabled selected>choose...</option>
+                  <option>London</option>
+                  <option>Istanbul</option>
+                </select>
+                <i class="ion ion-arrow-down-b u-mt30"></i>
+              </div>
+                <label class="u-ml20 u-mb5"><small>email address</small></label>
+                <input type="email" class="field field-dark u-fullwidth" placeholder="email address" value="erhan@example.com"></input>
                 <div class="field-validation u-hide">Please fill out this field.</div>
               </div>
               <div class="fieldset">
@@ -138,12 +147,41 @@
               </div>
               <div class="fieldset">
                 <label class="u-ml20 u-mb5"><small>cuisine type (max 3)</small></label>
-                <input type="text" data-role="tagsinput" class="field field-tag u-fullwidth" placeholder="" value="mediterranean, crossover"></input>
+                <input type="text" class="u-hide" value="test" />
+                <div>
+                  <div class="fieldset fieldset-checkbox">
+                    <input type="checkbox" id="cuisine1"></input>
+                    <label for="cuisine1"><span>mediterranean</span></label>
+                  </div>
+                  <div class="fieldset fieldset-checkbox">
+                    <input type="checkbox" id="cuisine2"></input>
+                    <label for="cuisine2"><span>turkish</span></label>
+                  </div>
+                  <div class="fieldset fieldset-checkbox">
+                    <input type="checkbox" id="cuisine3"></input>
+                    <label for="cuisine3"><span>asian</span></label>
+                  </div>
+                  <div class="fieldset fieldset-checkbox">
+                    <input type="checkbox" id="cuisine4"></input>
+                    <label for="cuisine4"><span>crossover</span></label>
+                  </div>
+                </div>
                 <div class="field-validation u-hide">Please fill out this field.</div>
               </div>
               <div class="fieldset">
                 <label class="u-ml20 u-mb5"><small>description</small></label>
                 <textarea type="text" class="field field-dark u-fullwidth" placeholder="description" value="" rows="5"></textarea>
+                <div class="field-validation u-hide">Please fill out this field.</div>
+              </div>
+              <div class="u-floatright u-mt10">
+                <a href="javascript:void(0)" class="btn btn-grey u-ph10 u-mt20"><i class="ion ion-android-close"></i></a>
+                <div class="badge badge-square" style="">
+                  <img src="images/profil.jpg" alt="" />
+                </div>
+              </div>
+              <div class="fieldset u-inlineblock">
+                <label class="u-ml20 u-mb5"><small>image</small></label>
+                <input type="file" class="field field-dark"></input>
                 <div class="field-validation u-hide">Please fill out this field.</div>
               </div>
               <button href="view-chef.html" class="btn btn-primary u-mv20 u-floatright" onclick="">SAVE CHANGES</button>
