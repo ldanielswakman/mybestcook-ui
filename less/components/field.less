@@ -123,6 +123,20 @@ select:hover {
         margin-top: 10px;
       }
     }
+    &.fieldset-checkbox-small {
+      label:before {
+        width: 20px;
+        font-size: 20px;
+        line-height: 25px;
+      }
+      span {
+        font-size: 0.9em;
+        margin-top: 0;
+      }
+      input:checked + label:before {
+        font-size: 18px;
+      }
+    }
   }
 }
 .fieldset-hasIcon {
@@ -183,47 +197,22 @@ select:hover {
     border-width: 5px;
   }
 }
-.bootstrap-tagsinput {
-  .field;
-  .field-dark;
-  .u-fullwidth;
+.fieldgroup-multiselect {
   height: auto;
 
-  input {
-    border: none;
-    box-shadow: none;
-    outline: none;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    width: auto !important;
-    max-width: inherit;
-    min-width: 0;
-    line-height: 20px;
-    padding-top: 5px;
-
-    &:focus {
-      border: none;
-      box-shadow: none;
-    }
+  &.field-dark:hover {
+    background-color: fade(@blueDark, 10%);
   }
-  .tag {
-    background-color: @burgundy;
-    line-height: 12px;
-    padding: 3px 8px;
-    margin-bottom: 5px;
-    .rounded(13px);
+  .fieldset-checkbox {
+    width: 50%;
+    float: left;
 
-    span[data-role="remove"]:before {
-      content: "\f2d7";
-      font-family: "Ionicons";
-      margin-left: 5px;
-      margin-right: 3px;
-      cursor: pointer;
-      color: fade(@white, 70%);
+    input:checked + label:before,
+    input:checked + span {
+      color: @burgundy;
     }
-    span[data-role="remove"]:hover:before {
-      color: @white;
+    span {
+      color: @blueDark;
     }
   }
 }
