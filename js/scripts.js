@@ -2,7 +2,10 @@ var p = 2; // Parallax strength
 
 $(document).ready(function() {
 
-  // touch device detection
+  // platform, touch device & standalone detection
+  $ios = ( navigator.userAgent.toLowerCase().match(/(iPad|iPhone|iPod)/i) ? true : false );
+  $android = ( navigator.userAgent.toLowerCase().match(/(android)/i) ? true : false );
+  $standalone = (window.navigator.standalone) ? true : false;
   $touch = ( navigator.userAgent.match(/(Android|webOS|iPad|iPhone|iPod|BlackBerry)/i) ? true : false );
   if ($touch) { $('body').addClass('isTouch') }
   var touchEvent = $touch ? 'touchstart' : 'click';
@@ -118,6 +121,16 @@ function openDialog(target) {
     console.log('dialog \'' + target + '\' not found.');
   }
 }
+function playAboutVideo() {
+  if($('#aboutvideo').length) {
+    $('.video-fadeonplay').addClass('u-hide');
+    $('#aboutvideo').removeClass('u-hide');
+    $('#aboutvideo').closest('section').css('height', '100vh');
+  } else {
+    console.log('no video found...');
+  }
+}
+
 // submit button effects (UI mockup only)
 function submitDummyEffects(obj) {
   $('.newsletter .field').each(function() {

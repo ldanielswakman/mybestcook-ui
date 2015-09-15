@@ -106,31 +106,31 @@
     <div class="flash-container">
     </div>
 
-		<section class="bg-greylight">
+		<section class="bg-darkblue">
 
 			<div class="row">
 				<div class="col-sm-6 col-nopadding">
           <div class="content u-pv30 bg-winered u-aligncenter">
             <img id="logo" src="images/logo.svg" alt="" />
           </div>
-          <div class="content bg-darkblue">
+          <div class="content bg-white">
 
-            <h3>SIGN UP AS A CHEF</h3>
+            <h3 class="c-darkblue">SIGN UP AS A CHEF</h3>
 
             <form action="" class="u-mb20">
               <div class="fieldset">
                 <label class="u-ml20 u-mb5"><small>name</small></label>
-                <input type="text" class="field u-fullwidth" placeholder="name"></input>
+                <input type="text" class="field field-dark u-fullwidth" placeholder="name"></input>
                 <div class="field-validation u-hide">Please fill in your name.</div>
               </div>
               <div class="fieldset">
                 <label class="u-ml20 u-mb5"><small>email address</small></label>
-                <input type="email" class="field u-fullwidth" placeholder="email address"></input>
+                <input type="email" class="field field-dark u-fullwidth" placeholder="email address"></input>
                 <div class="field-validation u-hide">Please fill in your email address.</div>
               </div>
               <div class="fieldset fieldset-hasIcon u-fullwidth">
                 <label class="u-ml20 u-mb5"><small>city</small></label>
-                <select class="field u-fullwidth">
+                <select class="field field-dark u-fullwidth">
                   <option disabled selected>choose...</option>
                   <option>London</option>
                   <option>Istanbul</option>
@@ -139,17 +139,17 @@
               </div>
               <div class="fieldset">
                 <label class="u-ml20 u-mb5"><small>restaurant name (optional)</small></label>
-                <input type="text" class="field u-fullwidth" placeholder="restaurant name (optional)"></input>
+                <input type="text" class="field field-dark u-fullwidth" placeholder="restaurant name (optional)"></input>
                 <div class="field-validation u-hide"></div>
               </div>
               <div class="fieldset">
                 <label class="u-ml20 u-mb5"><small>password</small></label>
-                <input type="password" class="field u-fullwidth" placeholder="password"></input>
+                <input type="password" class="field field-dark u-fullwidth" placeholder="password"></input>
                 <div class="field-validation u-hide">Please fill in your password.</div>
               </div>
               <div class="fieldset">
                 <label class="u-ml20 u-mb5"><small>password (again)</small></label>
-                <input type="password" class="field u-fullwidth u-mb20" placeholder="password (again)"></input>
+                <input type="password" class="field field-dark u-fullwidth u-mb20" placeholder="password (again)"></input>
                 <div class="field-validation u-hide">Password does not match.</div>
               </div>
               <div class="fieldset fieldset-checkbox u-mb20">
@@ -157,7 +157,7 @@
                 <label for="agree"><span>I agree with the <a href="about.html">Terms & Conditions</a></span></label>
                 <div class="field-validation u-hide">Please accept the Terms and Conditions before you can continue.</div>
               </div>
-              <button type="submit" href="javascript:void(0)"class="btn btn-large btn-white u-mb10" onclick="submitDummyEffects($(this));">CREATE ACCOUNT</button>
+              <button type="submit" href="javascript:void(0)"class="btn btn-large btn-primary u-mb10" onclick="submitDummyEffects($(this));">CREATE ACCOUNT</button>
               <br />
               <div class="field-message u-mt20 u-hide">
                 <a href="javascript:void(0)" onclick="closeMessage($(this));" class="u-floatright u-ml10 u-mb10"><i class="ion ion-android-close ion-15x"></i></a>
@@ -173,14 +173,17 @@
           <div class="content">
 
             <form action="login" class="u-mb20">
+
+              <h3 class="c-grey">... or LOGIN</h3>
+
               <div class="fieldset">
                 <label class="u-ml20 u-mb5"><small>email address</small></label>
-                <input type="email" class="field field-white u-fullwidth" placeholder="email address"></input>
+                <input type="email" class="field u-fullwidth" placeholder="email address"></input>
                 <div class="field-validation u-hide">Please fill in your email address.</div>
               </div>
               <div class="fieldset">
                 <label class="u-ml20 u-mb5"><small>password</small></label>
-                <input type="password" class="field field-white u-fullwidth u-mb20" placeholder="password"></input>
+                <input type="password" class="field u-fullwidth u-mb20" placeholder="password"></input>
                 <div class="field-validation u-hide">Please fill in your password.</div>
               </div>
               <button type="submit" href="javascript:void(0)"class="btn u-mb10 u-floatright" onclick="submitDummyEffects($(this));">LOGIN</button>
