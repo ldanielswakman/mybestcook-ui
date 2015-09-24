@@ -141,6 +141,49 @@ label {
   background-position: center top;
   z-index: 0;
 }
+/* --- Slideshow --- */
+.slides img {
+  width: 100%;
+  max-width: 100%;
+}
+.bx-wrapper {
+  position: relative;
+  .bx-prev,
+  .bx-next {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    background-color: fade(@white, 50%);
+    color: @blueDark;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5em;
+
+    &:before {
+      content: "\f108";
+      font-family: "Ionicons";
+    }
+    &:hover {
+      background-color: @white;
+    }
+    &:active {
+      background-color: @burgundy;
+      color: @white;
+    }
+  }
+  .bx-next {
+    left: auto;
+    right: 0;
+
+    &:before {
+      content: "\f10b";
+    }
+  }
+}
 
 
 

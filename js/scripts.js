@@ -13,9 +13,20 @@ $(document).ready(function() {
   $('a[href^="#"]').smoothScroll();
 
   if($('.slides').length > 0) {
-    $('.slides').slidesjs({
-      width: 500,
-      height: 300,
+    $('.slides').each(function () {
+      if ( $(this).find('li').length > 1 ) {
+
+        $(this).bxSlider({
+          // auto: true,
+          adaptiveHeight: true,
+          mode: 'horizontal',
+          pause: 10000,
+          pager: false,
+          prevText: '',
+          nextText: ''
+        });
+        
+      }
     });
   }
 
