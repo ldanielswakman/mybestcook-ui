@@ -17,7 +17,7 @@ $(document).ready(function() {
       if ( $(this).find('li').length > 1 ) {
 
         $(this).bxSlider({
-          // auto: true,
+          auto: true,
           adaptiveHeight: true,
           mode: 'horizontal',
           pause: 10000,
