@@ -74,6 +74,17 @@
       background-color: @white;
     }
   }
+  &.btn-facebook {
+    background-color: @facebookBlue;
+
+    &:hover {
+      background-color: darken(@facebookBlue, 15%);
+    }
+    &.isBusy:before,
+    &.isSuccess:before {
+      background-color: @facebookBlue;
+    }
+  }
   &.btn-outline {
     background-color: transparent;
     border: 1px solid @burgundy;
